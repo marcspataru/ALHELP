@@ -10,7 +10,7 @@ const loginPageTitle = 'Login';
 const personalTabUrl = '/personal-tab';
 
 module.exports.login_get = (req, res) => {
-		res.render('login', { title: 'Login' });
+		res.render(loginPageName, { title: 'Login' });
 }
 
 module.exports.login_post = async (req, res) => {
