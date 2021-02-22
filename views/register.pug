@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    -data = data || {}
+    if errors
+        ul.my-errors
+            for error in errors
+                li= error
+    if errorsV
+        ul.my-errors
+            for error in errorsV
+                li= error.msg
+    form(action='/register' method="POST" class="form-registration")
+        h1 ALHENS
+        label(for="name") Name:
+        input(
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            value=data.name
+        )
+
+        label(for="password") Password:
+        input(
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            value=data.password
+        )
+
+        label(for="cpassword") Confirm password:
+        input(
+            type="password"
+            id="cpassword"
+            name="cpassword"
+            class="form-control"
+            value=data.cpassword
+        )
+
+        input(type="submit" value="Register" class="btn btn-lg btn-primary btn-block")
+        p Already have an account? Login #[a(href=".") here]

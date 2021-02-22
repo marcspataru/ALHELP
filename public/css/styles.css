@@ -1,0 +1,46 @@
+html, body {
+  height: 100%;
+}
+body {
+    background-image: url("../img/blackboard.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+/* css for registration form and errors*/
+.form-registration {
+  max-width: 330px;
+  padding: 15px;
+  padding-top: 60px;
+  margin: 0 auto;
+}
+.form-registration {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-registration {
+  display: block;
+}
+.form-registration input {
+  width: 100%;
+  margin: 0px 0 10px;
+}
+.form-registration .btn {
+  flex: 1 0 100%;
+}
+.my-errors {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  display: table;
+}
+.my-errors li {
+  margin: 0 0 1rem;
+}
+.my-errors li:before {
+  content: "! Error : ";
+  color: #f00;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+{
+  "logic": {
+    "name": "Logic",
+    "lessons": [
+      {
+        "lessonName": "Logic Basics Content",
+        "lessonShort": "lbc"
+      },
+      {
+        "lessonName": "Truth Tables and Laws",
+        "lessonShort": "ttal"
+      },
+      {
+        "lessonName": "Predicates",
+        "lessonShort": "predicates"
+      }
+    ]
+  },
+  "coa": {
+    "name": "Computer Organization and Architecture"
+  }
+}

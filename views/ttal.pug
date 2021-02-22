@@ -1,0 +1,315 @@
+extends header
+block content
+    .container
+        h1 Section 1 - Logic operators priorities
+        p
+            | To reduce the number of brackets, we use 
+            i priorities
+        p Highest priority: &#xac;, then &#8743;, &#x2228;, ⇒, ⇔
+        p
+            i Example: 
+            | &#xac;(A &#8743; B) ⇔ &#xac;A &#x2228; &#xac;B means
+        p (&#xac;(A &#8743; B)) ⇔ ((&#xac;A) &#x2228; (&#xac;B))
+
+        h1 Section 2 - Truth table for compound statement
+        p Truth tables completely define logical operators, and let us find the value of compound statements
+        p
+            i Example: 
+            | (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full &#xac;A
+                th.full &#xac;A ⇒ B
+                th.full &#xac;B
+                th.full &#xac;B ⇒ A
+                th.full (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+            tr
+                td T
+                td T
+                td F
+                td T
+                td F
+                td T
+                td T
+            tr
+                td T
+                td F
+                td F
+                td T
+                td T
+                td T
+                td T
+            tr
+                td F
+                td T
+                td T
+                td T
+                td F
+                td T
+                td T
+            tr
+                td F
+                td F
+                td T
+                td F
+                td T
+                td F
+                td T
+            tr
+                td.bot
+                td.bot
+                td.bot
+                td.bot
+                td.bot
+                td.bot
+                td.bot *
+        p Alternative layout style - useful for large formulae
+        p
+            i Example: 
+            | (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full (&#xac;
+                th.full A
+                th.full ⇒ 
+                th.full B)
+                th.full ⇔
+                th.full (&#xac;
+                th.full B
+                th.full ⇒
+                th.full A)
+            tr
+                td T
+                td T
+                td F
+                td T
+                td T
+                td T
+                td T
+                td F
+                td T
+                td T
+                td T
+            tr
+                td T
+                td F
+                td F
+                td T
+                td T
+                td F
+                td T
+                td T
+                td F
+                td T
+                td T
+            tr
+                td F
+                td T
+                td T
+                td F
+                td T
+                td T
+                td T
+                td F
+                td T
+                td T
+                td F
+            tr
+                td F
+                td F
+                td T
+                td F
+                td F
+                td F
+                td T
+                td T
+                td F
+                td F
+                td F
+            tr
+                td.bot 
+                td.bot
+                td.bot
+                td.bot
+                td.bot
+                td.bot
+                td.bot *
+                td.bot 
+                td.bot
+                td.bot
+                td.bot
+        p Using truth tables is not always convenient:
+        p &#xac;((&#xac;A &#8743; B) &#x2228; (C &#8743; &#xac;D)) ⇔ (A &#8743; &#xac;C) &#x2228; (A &#8743; D) &#x2228; (&#xac;B &#8743; &#xac;C) &#x2228; (&#xac;B &#8743; D)
+        p Is this true for all A, B, C and D?
+        p To simplify Boolean expressions, we will use laws of logic:
+
+        h1 Section 3 - Logic laws
+        p Laws of Boolean logic (hold for all A, B and C):
+        ul
+            li
+                i double negation: 
+                | &#xac;&#xac;A ⇐⇒ A
+            li
+                i &#8743; idempotent: 
+                | A &#8743; A ⇐⇒ A
+            li
+                i &#x2228; idempotent: 
+                | A &#x2228; A ⇐⇒ A
+            li
+                i &#8743; commutative: 
+                | A &#8743; B ⇐⇒ B &#8743; A
+            li
+                i &#x2228; commutative: 
+                | A &#x2228; B ⇐⇒ B &#x2228; A
+            li
+                i &#8743; associative: 
+                | (A &#8743; B) &#8743; C ⇐⇒ A &#8743; (B &#8743; C)
+            li
+                i &#x2228; associative: 
+                | (A &#x2228; B) &#x2228; C ⇐⇒ A &#x2228; (B &#x2228; C)
+            li
+                i &#8743; distributes over &#x2228;: 
+                | A &#8743; (B &#x2228; C) ⇐⇒ (A &#8743; B) &#x2228; (B &#8743; C)
+            li
+                i &#x2228; distributes over &#8743;: 
+                | A &#x2228; (B &#8743; C) ⇐⇒ (A &#x2228; B) &#8743; (B &#x2228; C)
+        p Compare a * (b + c) = a * b + a * c, but a + b * c &ne; (a + b) * (a + c)
+
+        p
+            i De Morgan's Laws:
+        ul
+            li &#xac;(A &#8743; B) ⇐⇒ &#xac;A &#x2228; &#xac;B
+            li &#xac;(A &#x2228; B) ⇐⇒ &#xac;A &#8743; &#xac;B
+        p Thus, A &#8743; B ⇐⇒ &#xac;(&#xac;A &#x2228; &#xac;B), so &#8743; can be expressed via &#xac;, &#x2228;
+        p Also, A &#x2228; B ⇐⇒ &#xac;(&#xac;A &#8743; &#xac;B), so &#x2228; can be expressed via &#xac;, &#8743;
+        p (Cannot remove both &#8743;, &#x2228; at the same time!)
+
+        p Still more laws of logic:
+        ul
+            li
+                i identity laws: 
+                | A &#8743; T ⇐⇒ A, A &#x2228; F ⇐⇒ A
+            li
+                i annihilation laws: 
+                | A &#8743; F ⇐⇒ F, A &#x2228; T ⇐⇒ T
+            li
+                i laws of excluded middle: 
+                | A &#8743; &#xac;A ⇐⇒ F, A &#x2228; &#xac;A ⇐⇒ T
+            li
+                i absorption laws: 
+                | A &#8743; (A &#x2228; B) ⇐⇒ A ⇐⇒ A &#x2228; (A &#8743; B)
+            li (A ⇒ B) ⇐⇒ (&#xac;A &#x2228; B) ⇐⇒ &#xac;(A &#8743; &#xac;B)
+            li (A ⇔ B) ⇐⇒ (A ⇒ B) &#8743; (B ⇒ A) ⇐⇒ (A &#8743; B) &#x2228; (&#xac;A &#8743; &#xac;B)
+        p So, ⇒ and ⇔ are redundant (but convenient)
+
+        p All these laws can be verified by truth tables
+        p
+            i Example: 
+            | &#xac;(A &#8743; B) ⇐⇒ (&#xac;A &#x2228; &#xac;B)
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full A &#8743; B
+                th.full &#xac;(A &#8743; B)
+                th.full &#xac;A
+                th.full &#xac;B
+                th.full (&#xac;A &#x2228; &#xac;B)
+            tr 
+                td T
+                td T
+                td T
+                td F
+                td F
+                td F
+                td F
+            tr
+                td T
+                td F
+                td F
+                td T
+                td F
+                td T
+                td T
+            tr
+                td F
+                td T
+                td F
+                td T
+                td T
+                td F
+                td T
+            tr
+                td F
+                td F
+                td F
+                td T
+                td T
+                td T
+                td T
+            tr
+                td.bot
+                td.bot
+                td.bot
+                td.bot *
+                td.bot
+                td.bot
+                td.bot *
+        h1 Section 4 - Contrapositive, converse, proof by contradiction
+        p Using laws of logic
+        p Prove: (A ⇒ B) ⇐⇒ (&#xac;B ⇒ &#xac;A).
+        p
+            strong Proof.
+        p (&#xac;B ⇒ &#xac;A) ⇐⇒ (&#xac;&#xac;B &#x2228; &#xac;A) ⇐⇒ (B &#x2228; &#xac;A) ⇐⇒ (&#xac;A &#x2228; B) ⇐⇒ (A ⇒ B)
+        p &#xac;B ⇒ &#xac;A is the contrapositive of A ⇒ B
+        p B ⇒ A is the converse of A ⇒ B
+        p Statement A ⇒ B is equivalent to its contrapositive, but not to its converse
+        p Equivalence with contrapositive allows proof by contradiction
+
+        p
+            i Example of a proof by contradiction:
+        p Holmes: I see our visitor was absent-minded...
+        p Watson: But why!??
+        p Holmes: Elementary, my dear Watson! Alert people never leave things behind. But he left his walking stick. Therefore, he must be absent-minded.
+        p A = "person is alert"
+        p B = "person does not leave things behind"
+        p Holmes' argument: (A ⇒ B) =⇒ (&#xac;B ⇒ &#xac;A)
+
+        p Sign in a restaurant:
+        p
+            i Good food is not cheap
+        p
+            i Cheap food is not good
+        p Is it repeating the same thing twice?
+        p Yes! The statements are contrapositives to each other
+        
+        h1= `${lesson} - Quiz`
+        if docs
+            form(method="POST")
+                - let i = 1;
+                for question in docs
+                    label= `Question ${i}:`
+                    br 
+                    - let qWeight = 1 / docs.length;
+                    input(type="hidden" name='qWeight' value=qWeight)
+                    img(src=question.qText alt='The image path is broken')
+                    br
+                    button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Show me the answer(s)!
+                    div(class='collapse' id=`collapse${i}`)
+                        .card.card-body
+                            img(src=question.qAnswer alt='The image path is broken')
+                    .form-check
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a1` required)
+                        label.form-check-label(for=`${question._id}`) Everything is clear!
+                    .form-check 
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a2` required)
+                        label.form-check-label(for=`${question._id}`) I understand most of it.
+                    .form-check 
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a3` required)
+                        label.form-check-label(for=`${question._id}`) This answer is confusing for the most part.
+                    - i++;
+                input(type='submit' value='Submit answers' class='btn btn-info')

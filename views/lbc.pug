@@ -1,0 +1,309 @@
+extends header
+block content
+    .container
+        h1 Section 1 - Logic Statements
+        p The following are examples of statements
+        ul
+            li Five is less than ten.
+            li Pigs can fly.
+            li There is life on Mars.
+            li Welcome to Tweedy's farm!
+            li What's in the pies!
+            li It's not as bad as it looks
+        p A statement is a sentence that is either true or false (but not both!)
+
+        p False and True are Boolean values: &#120121; = {F,T} (after G. Boole, 1815 - 1864)
+
+        p value(5 < 10) = T
+        p value("Pigs can fly") = F
+        p vaalue("It's not as bad as it looks") = undefined
+        p value("The pie is not as badas it looks") = F
+
+        h1 Section 2 - Logic Operators
+        p We often need compund statements: (5 < 10) AND (Pigs can fly)
+        p ... i.e T AND F = F
+        p This is similar to e.g. 3 + 4 = 7, as we define Boolean operators on &#120121; like arithmetic operators on &#8469;
+
+        p We will use the symbol "⇐⇒" to mean "is equivalent to", i.e. "takes the same truth value as"
+        p We write "A ⇐⇒ B ⇐⇒ C" as an abbreviation for "A ⇐⇒ B and B ⇐⇒ C"
+
+        h5 Boolean operators:
+        table.bop
+            tr
+                td.top &#xac;A
+                td.top NOT A
+                td.top negation
+            tr
+                td A&#8743;B
+                td A AND B
+                td conjunction
+            tr
+                td A&#x2228;B
+                td A OR B
+                td disjunction
+            tr
+                td A⇒B
+                td IF A THEN B
+                td implication
+            tr
+                td.bot A⇔B
+                td.bot A⇒B and B⇒A
+                td.bot equivalence
+        
+        h4 Negation
+        p Negation (NOT A): &#xac;A
+        p True if A false, false if A true
+        table.bop
+            tr
+                th.full A
+                th.full &#xac;A
+            tr
+                td F
+                td T
+            tr
+                td.bot T
+                td.bot F
+        p
+            i Examples:
+        p &#xac;[5 < 10] ⇐⇒ &#xac;T ⇐⇒ F
+        p &#xac;[Pigs can  fly] ⇐⇒ &#xac;F ⇐⇒ T
+
+        h4 Conjunction
+        p Conjunction (A AND B): A&#8743;B
+        p True if both A and B true
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full A&#8743;B
+            tr
+                td F
+                td F
+                td F
+            tr
+                td F
+                td T
+                td F
+            tr
+                td T
+                td F
+                td F
+            tr
+                td.bot T
+                td.bot T
+                td.bot T
+        p
+            i Examples
+        p [5 < 10] &#8743; [Pigs can fly] ⇐⇒ T &#8743; F ⇐⇒ F
+
+        h4 Disjunction
+        p Disjunction (A OR B): A&#8743;B
+        p True if either A or B true (or both)
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full A&#x2228;B
+            tr
+                td F
+                td F
+                td F
+            tr
+                td F
+                td T
+                td T
+            tr
+                td T
+                td F
+                td T
+            tr
+                td.bot T
+                td.bot T
+                td.bot T
+        p
+            i Examples
+        p [5 < 10] &#x2228; [Pigs can fly] ⇐⇒ T &#x2228; F ⇐⇒ T
+        
+        h4 Implication
+        p Implication (IF A THEN B): A⇒B
+        p In everyday life, often ambigous:
+        p &nbsp;&nbsp; If the bird is happy, then it sings
+        p Happy: always sings
+        p Unhappy: never sings? may or may not sing?
+
+        p True if A false; true if both A and B true; false otherwise
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full A⇒B
+            tr
+                td F
+                td F
+                td T
+            tr
+                td F
+                td T
+                td T
+            tr
+                td T
+                td F
+                td F
+            tr
+                td.bot T
+                td.bot T
+                td.bot T
+        p 
+            i Examples
+        p [[5 < 10] ⇒ [Pigs can fly]] ⇐⇒ [T ⇒ F] ⇐⇒ F
+        p [[Pigs fly] ⇒ [5 < 10]] ⇐⇒ [F ⇒ T] ⇐⇒ T
+        p [[Pigs fly] ⇒ [5 > 10]] ⇐⇒ [F ⇒ F] ⇐⇒ T
+
+        p Everything implies truth; false implies anything - why?
+        p A joke (after G. Hardy): 2 + 2 = 5 =⇒ I am Count Dracula
+        p "Proof": 2 + 2 = 5 =⇒ 4 = 5 =⇒ 5 = 4 =⇒ 2 = 1
+        p Dracula and I are two =⇒ Dracula and I are one
+        p A variation of Hardy's theme: 2 + 2 = 5 =⇒ Grass is green
+        p "Proof": 2 + 2 = 5 =⇒ 4 = 5 =⇒ 5 = 4 =⇒ 4 + 5 = 5 + 4 =⇒ T
+        p T =⇒ Grass is green
+        p Although this is a joke, the reasoning is esentially correct!
+
+        p Implication A ⇒ B can have many disguises:
+        table.table-borderless
+            tr
+                td A implies B&nbsp;
+                td B is implied by A
+            tr
+                td A leads to B&nbsp;
+                td B follows from A
+            tr
+                td A is stronger than B&nbsp;
+                td B is weaker than A
+            tr
+                td A is sufficient for B&nbsp;
+                td B is necessary for A
+
+        p 
+            i Examples:
+        p For a number to be divisible by 4, it is necessary that it is even
+        p For a triangle to be isosceles, it is sufficient that it is equilateral
+        p (NB: isosceles = "has two equal sides", equilateral = "has three equal sides")
+
+        h4 Equivalence
+        p Equivalence (A IF AND ONLY IF B): A⇔B
+        p True if A and B agree; false otherwise
+
+        table.bop
+            tr
+                th.full A
+                th.full B
+                th.full A⇔B
+            tr
+                td F
+                td F
+                td T
+            tr
+                td F
+                td T
+                td F
+            tr
+                td T
+                td F
+                td F
+            tr
+                td.bot T
+                td.bot T
+                td.bot T
+        p 
+            i Examples
+        p [[5 < 10] ⇔ [Pigs can fly]] ⇐⇒ [T ⇔ F] ⇐⇒ F
+        p [[Pigs fly] ⇔ [5 < 10]] ⇐⇒ [F ⇔ T] ⇐⇒ F
+        p [[Pigs fly] ⇔ [5 > 10]] ⇐⇒ [F ⇔ F] ⇐⇒ T
+
+        h1 Section 3 - Difference between ⇐⇒, ⇔, ⇒, =⇒
+        p There is a lot of similarity between "⇔" and "⇐⇒"
+        p We use "⇐⇒" informally for "if and only if" in proofs and assertions, to show the line of the argument by linking statements we claim to be true
+        p "⇔" is just the Boolean operator, which, like other Boolean operators, can link true or false statements, giving the corresponding truth values
+        p IF AND ONLY IF is often contracted to IFF
+
+        p We will use "=⇒" informally for "if...then..." in proofs and assertions, to show the line of the argument by progressing from one statement we claim to be true to another
+        p "⇒" is just the Boolean operator, which, like other Boolean operators, can link true or false statements, giving the corresponding truth values
+        p We also occasionally use "⇐="; "A⇐=B" corresponds to "B=⇒A"
+
+        p Implication and equivalence are often used to state theorems
+        p 
+            i Examples:
+        p 
+            strong Axiom: 
+            | If n is in &#8469;, then n + 1 is in &#8469;.
+        p (That is, for all n, [n in &#8469;] =⇒ [n + 1] in &#8469;)
+        p 
+            strong Theorem. 
+            | Number n is even iff n + 1 is odd.
+        p (That is, for all n in &#8469;, [n even] ⇐⇒ [n + 1 odd])
+        p 
+            strong Axiom.
+            | If two points are distinct, then there is exactly one straight line connecting them
+        p 
+            strong Theorem. 
+            | A triangle has two equal sides, if and only if it has two equal angles.
+
+        p Implication and equivalence are used in proofs
+        p 
+            i Example:
+        p 
+            strong Theorem. 
+            | If number n is even, then n + 2 is even
+        p 
+            strong Proof. 
+            | [n even] =⇒ [n + 1 odd] =⇒ [n + 2 = (n + 1) + 1 even]
+
+        p When proving "⇐⇒", we must either
+        ul
+            li use "⇐⇒" (not "=⇒") throughout the proof, or
+            li prove both "=⇒" and "⇐=" separately
+        p 
+            i Example (a stronger theorem):
+        p 
+            strong Theorem. 
+            | Number n is even, iff n + 2 is even.
+        p
+            strong Proof. 
+            | [n even] ⇐⇒ [n + 1 odd] ⇐⇒ [n + 2 = (n + 1) + 1 even]
+        p 
+            strong Proof (alternative).
+        p [n even] =⇒ [n + 1 odd] =⇒ [n + 2 = (n + 1) + 1 even]
+        p [n + 2 = (n + 1) + 1 even] =⇒ [n + 1 odd] =⇒ [n even]
+
+        h1= `${lesson} - Quiz`
+        if docs
+            form(method="POST")
+                - let i = 1;
+                for question in docs
+                    label= `Question ${i}:`
+                    br 
+                    - let qWeight = 1 / docs.length;
+                    input(type="hidden" name='qWeight' value=qWeight)
+                    img(src=question.qText alt='The image path is broken')
+                    br
+                    button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Show me the answer(s)!
+                    div(class='collapse' id=`collapse${i}`)
+                        .card.card-body
+                            img(src=question.qAnswer alt='The image path is broken')
+                    .form-check
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a1` required)
+                        label.form-check-label(for=`${question._id}`) Everything is clear!
+                    .form-check 
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a2` required)
+                        label.form-check-label(for=`${question._id}`) I understand most of it.
+                    .form-check 
+                        input.form-check-input(type='radio' name=`${question._id}` value=`a3` required)
+                        label.form-check-label(for=`${question._id}`) This answer is confusing for the most part.
+                    - i++;
+                input(type='submit' value='Submit answers' class='btn btn-info')
+
+
+        
+
+        
+

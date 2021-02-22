@@ -1,0 +1,18 @@
+extends header
+block content
+    if(courses)
+        .container
+            #cards
+                for course in courses
+                    .card.w-50
+                        .card-body
+                            h5.card-title= course.name
+                            p= `Lessons completed: ${course.completion}`
+                            -course.name = course.name.toLowerCase()
+                            -course.name.replace(/\s/g, '')
+                            if(course.completed === false)
+                                a(href=`courses/${course.name}`) Learn
+                            else 
+                                p Course completed! Congratulations!
+    else
+        p There was a server error. Please try again later.

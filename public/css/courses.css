@@ -1,0 +1,23 @@
+#cards {
+    margin-top: 10px;
+}
+.bop table {
+    border-collapse: collapse;
+}
+.bop tr {
+    border: none;
+}
+.bop td {
+  border-right: solid 1px #000; 
+  border-left: solid 1px #000;
+  text-align: center;
+}
+.bop th.full {
+    border: solid 1px black;
+}
+.bop td.top {
+    border-top: solid 1px black;
+}
+.bop td.bot {
+    border-bottom: solid 1px black;
+}

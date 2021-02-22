@@ -1,0 +1,12 @@
+body {
+    background-color: lightgray;
+}
+#ils-form #qsub {
+    width: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  
+#ils-form label.question {
+    margin-top: 5px;
+}
