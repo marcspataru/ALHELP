@@ -7,10 +7,11 @@ const Course = require('../models/Course');
 
 const loginPageName = 'login';
 const loginPageTitle = 'Login';
+const registerPageName = 'register';
 const personalTabUrl = '/personal-tab';
 
 module.exports.login_get = (req, res) => {
-		res.render(loginPageName, { title: 'Login' });
+		res.render(loginPageName, { title: loginPageTitle });
 }
 
 module.exports.login_post = async (req, res) => {
@@ -34,7 +35,7 @@ module.exports.login_post = async (req, res) => {
 }
 
 module.exports.register_get = (req, res) => {
-		res.render('register', { title: 'Register' });
+		res.render(registerPageName, { title: 'Register' });
 }
 
 module.exports.register_post = (req, res) => {
