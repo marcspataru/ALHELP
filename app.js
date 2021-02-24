@@ -3,6 +3,7 @@ const path = require('path');
 const routes = require('./routes/index');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
+const session = require('express-session');
 
 const app = express();
 
@@ -13,6 +14,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use(express.json());
 app.use(cookieParser());
+app.use(session({
+  secret: 'Secret',
+  resave: false,
+  saveUninitialized: false
+}));
 app.use(routes);
 
 module.exports = app;

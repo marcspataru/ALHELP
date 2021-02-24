@@ -1,7 +1,11 @@
 extends header
 block content
     -data = data || {}
+    -error = error || null
     .container
+        if error
+            .error
+                p= error
         if ilsResults
             p You have already completed the Index Learning Style questionnaire. Your results are:
             ul

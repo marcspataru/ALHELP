@@ -29,18 +29,14 @@ body {
 .form-registration .btn {
   flex: 1 0 100%;
 }
-.my-errors {
+.error {
   margin: 0 auto;
   padding: 0;
-  list-style: none;
-  font-size: 1.2rem;
-  display: table;
-}
-.my-errors li {
-  margin: 0 0 1rem;
-}
-.my-errors li:before {
   content: "! Error : ";
   color: #f00;
-  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.error p {
+  margin: 0;
 }

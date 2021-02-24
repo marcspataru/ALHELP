@@ -2,14 +2,9 @@ extends layout
 
 block content
     -data = data || {}
-    if errors
-        ul.my-errors
-            for error in errors
-                li= error
-    if errorsV
-        ul.my-errors
-            for error in errorsV
-                li= error.msg
+    if error
+        .error
+            p= error
     form(action='/register' method="POST" class="form-registration")
         h1 ALHENS
         label(for="name") Name:
