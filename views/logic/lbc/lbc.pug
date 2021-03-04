@@ -1,0 +1,48 @@
+extends ../../header
+block content
+    .container
+        .row 
+            .col-2
+                a(class='fullwh' href='#' id='arrow-left')
+                    img(class='arrow' src='/img/arrow-left.png')
+            .col-8
+                h1= lesson
+                #section1
+                    include section1bm.pug
+                #section2
+                    include section2bm.pug
+                #section3
+                    include section3bm.pug
+                #quiz
+                    h1= `${lesson} - Quiz`
+                    if docs
+                        form(method="POST")
+                            - let i = 1;
+                            input(type='hidden' name='lessonShort' value=lessonShort)
+                            input(type='hidden' name='questions' value=docs)
+                            for question in docs
+                                label= `Question ${i}:`
+                                br 
+                                - let qWeight = 1 / docs.length;
+                                input(type="hidden" name='qWeight' value=qWeight)
+                                img(src=question.qText alt='The image path is broken')
+                                br
+                                button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Show me the answer(s)!
+                                div(class='collapse' id=`collapse${i}`)
+                                    .card.card-body
+                                        img(src=question.qAnswer alt='The image path is broken')
+                                .form-check
+                                    input.form-check-input(type='radio' name=`${question._id}` value=`a1` required)
+                                    label.form-check-label(for=`${question._id}`) Everything is clear!
+                                .form-check 
+                                    input.form-check-input(type='radio' name=`${question._id}` value=`a2` required)
+                                    label.form-check-label(for=`${question._id}`) I understand most of it.
+                                .form-check 
+                                    input.form-check-input(type='radio' name=`${question._id}` value=`a3` required)
+                                    label.form-check-label(for=`${question._id}`) This answer is confusing for the most part.
+                                - i++;
+                            input(type='submit' value='Submit answers' class='btn btn-info')
+            .col-2
+                a(class='fullwh' href='#' id='arrow-right') 
+                    img(class='arrow' src='/img/arrow-right.png')
+    script(src='/js/slider.js' data-numberOfSections=`${numberOfSections}`)

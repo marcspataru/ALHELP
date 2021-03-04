@@ -1,22 +1,164 @@
-{
-  "logic": {
-    "name": "Logic",
-    "lessons": [
-      {
-        "lessonName": "Logic Basics Content",
-        "lessonShort": "lbc"
-      },
-      {
-        "lessonName": "Truth Tables and Laws",
-        "lessonShort": "ttal"
-      },
-      {
-        "lessonName": "Predicates",
-        "lessonShort": "predicates"
-      }
-    ]
+[{
+  "_id": {
+    "$oid": "6021b8e93dc03b2c9c2ce6a7"
   },
-  "coa": {
-    "name": "Computer Organization and Architecture"
-  }
-}
+  "name": "Logic",
+  "lessons": [
+    {
+      "lessonName": "Logic Basics Content",
+      "lessonShort": "lbc",
+      "numberOfSections": "3",
+      "alternativeSections": [
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 1
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 1",
+            "sgIndicator": "Sequential 3"
+          },
+          "section": 0
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 1"
+          },
+          "section": 1
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 5",
+            "siIndicator": "Sensing 5",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 2
+        }
+      ]
+    },
+    {
+      "lessonName": "Truth Tables and Laws",
+      "lessonShort": "ttal",
+      "numberOfSections": "4",
+	  "alternativeSections": [
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 3
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 1",
+            "sgIndicator": "Sequential 3"
+          },
+          "section": 0
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 1"
+          },
+          "section": 1
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 5",
+            "siIndicator": "Sensing 5",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 2
+        }
+      ]
+    },
+    {
+      "lessonName": "Predicates",
+      "lessonShort": "predicates",
+      "numberOfSections": "5",
+	  "alternativeSections": [
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 2
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 1",
+            "sgIndicator": "Sequential 3"
+          },
+          "section": 0
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 9",
+            "siIndicator": "Sensing 4",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 1"
+          },
+          "section": 1
+        },
+        {
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 5",
+            "siIndicator": "Sensing 5",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 3
+        },
+		{
+          "path": "/img/alt01.png",
+          "indicators": {
+            "arIndicator": "Active 5",
+            "siIndicator": "Sensing 5",
+            "vvIndicator": "Visual 5",
+            "sgIndicator": "Global 3"
+          },
+          "section": 4
+        }
+      ]
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6021b8e93dc03b2c9c2ce6a8"
+  },
+  "name": "Computer Organization and Architecture"
+}]

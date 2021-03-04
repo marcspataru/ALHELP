@@ -89,10 +89,10 @@ module.exports.personal_tab_post = async (req, res) => {
 		}};
 		let doc = await User.findOneAndUpdate(filter, update);
 		//console.log('found user with name: ', doc.name);/
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: PERSONAL_TAB_PAGE_TITLE, data: req.body, ilsResults: { arIndicator, siIndicator, vvIndicator, sgIndicator } });
+		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE, data: req.body, ilsResults: { arIndicator, siIndicator, vvIndicator, sgIndicator } });
 	}
 	catch(err) {
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: PERSONAL_TAB_PAGE_TITLE, data: req.body, error: err.message + ' Please try again.' });
+		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE, data: req.body, error: err.message + ' Please try again.' });
 	}
 }
 
@@ -100,27 +100,31 @@ module.exports.courses_get = async (req, res) => {
 	try {
 		const error = req.session.error ? req.session.error : null;
 		const user = req.session.user;
-		let coursesList = [];
-		for(let i = 0; i < user.courses.length; i++) {
-			const filter = { _id: user.courses[i].id };
-			const doc = await Course.findOne(filter);
-			let obj;
-			if(doc.lessons.length == user.courses[i].completion) {
-				obj = {
-					name: doc.name,
-					completion: user.courses[i].completion,
-					completed: true
-				};
-			} else {
-				obj = {
-					name: doc.name,
-					completion: user.courses[i].completion,
-					completed: false
-				};
+		if(!user.indicators.arIndicator) {
+			res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, error: error });
+		} else {
+			let coursesList = [];
+			for(let i = 0; i < user.courses.length; i++) {
+				const filter = { _id: user.courses[i].id };
+				const doc = await Course.findOne(filter);
+				let obj;
+				if(doc.lessons.length <= user.courses[i].completion) {
+					obj = {
+						name: doc.name,
+						completion: user.courses[i].completion,
+						completed: true
+					};
+				} else {
+					obj = {
+						name: doc.name,
+						completion: user.courses[i].completion,
+						completed: false
+					};
+				}
+				coursesList.push(obj);
 			}
-			coursesList.push(obj);
+			res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, courses: coursesList, error: error });
 		}
-		res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, courses: coursesList, error: error });
 	}
 	catch(err) {
 		res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, error: err.message + ' Please try again later.' });

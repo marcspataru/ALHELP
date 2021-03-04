@@ -4,7 +4,18 @@ const courseSchema = new mongoose.Schema({
 	name: String,
 	lessons: [{
 		lessonName: String,
-		lessonShort: String
+		lessonShort: String,
+		numberOfSections: Number,
+		alternativeSections: [{
+			path: String,
+			indicators: {
+				arIndicator: String,
+				siIndicator: String,
+				vvIndicator: String,
+				sgIndicator: String
+			},	
+			section: Number
+		}]
 	}]
 }, { collection: 'courses' });
 

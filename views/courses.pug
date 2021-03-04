@@ -3,7 +3,7 @@ block content
     if error
         .error
             p= error
-    if(courses)
+    if courses
         .container
             #cards
                 for course in courses
@@ -17,3 +17,6 @@ block content
                                 a(href=`courses/${course.name}`) Learn
                             else 
                                 p Course completed! Congratulations!
+    else 
+        .container 
+            p Please complete the Personal Tab before starting the courses!

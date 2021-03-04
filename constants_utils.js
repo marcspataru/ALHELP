@@ -15,5 +15,6 @@ module.exports = {
 	COURSES_PAGE_TITLE: 'Courses',
 	COURSES_PAGE_URL: '/courses',
 	LOGIC_PAGE_NAME: 'Logic',
-	LOGIC_PAGE_URL: '/logic'
+	LOGIC_PAGE_URL: '/logic',
+	LOGIC_PAGE_URL_NAME: 'logic'
 };

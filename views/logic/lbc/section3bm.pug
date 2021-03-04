@@ -1,0 +1,54 @@
+h1 Section 3 - Difference between ⇐⇒, ⇔, ⇒, =⇒
+p There is a lot of similarity between "⇔" and "⇐⇒"
+p We use "⇐⇒" informally for "if and only if" in proofs and assertions, to show the line of the argument by linking statements we claim to be true
+p "⇔" is just the Boolean operator, which, like other Boolean operators, can link true or false statements, giving the corresponding truth values
+p IF AND ONLY IF is often contracted to IFF
+
+p We will use "=⇒" informally for "if...then..." in proofs and assertions, to show the line of the argument by progressing from one statement we claim to be true to another
+p "⇒" is just the Boolean operator, which, like other Boolean operators, can link true or false statements, giving the corresponding truth values
+p We also occasionally use "⇐="; "A⇐=B" corresponds to "B=⇒A"
+
+p Implication and equivalence are often used to state theorems
+p 
+    i Examples:
+p 
+    strong Axiom: 
+    | If n is in &#8469;, then n + 1 is in &#8469;.
+p (That is, for all n, [n in &#8469;] =⇒ [n + 1] in &#8469;)
+p 
+    strong Theorem. 
+    | Number n is even iff n + 1 is odd.
+p (That is, for all n in &#8469;, [n even] ⇐⇒ [n + 1 odd])
+p 
+    strong Axiom.
+    | If two points are distinct, then there is exactly one straight line connecting them
+p 
+    strong Theorem. 
+    | A triangle has two equal sides, if and only if it has two equal angles.
+
+p Implication and equivalence are used in proofs
+p 
+    i Example:
+p 
+    strong Theorem. 
+    | If number n is even, then n + 2 is even
+p 
+    strong Proof. 
+    | [n even] =⇒ [n + 1 odd] =⇒ [n + 2 = (n + 1) + 1 even]
+
+p When proving "⇐⇒", we must either
+ul
+    li use "⇐⇒" (not "=⇒") throughout the proof, or
+    li prove both "=⇒" and "⇐=" separately
+p 
+    i Example (a stronger theorem):
+p 
+    strong Theorem. 
+    | Number n is even, iff n + 2 is even.
+p
+    strong Proof. 
+    | [n even] ⇐⇒ [n + 1 odd] ⇐⇒ [n + 2 = (n + 1) + 1 even]
+p 
+    strong Proof (alternative).
+p [n even] =⇒ [n + 1 odd] =⇒ [n + 2 = (n + 1) + 1 even]
+p [n + 2 = (n + 1) + 1 even] =⇒ [n + 1 odd] =⇒ [n even]
