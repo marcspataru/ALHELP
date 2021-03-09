@@ -1,13 +1,12 @@
 h1 Section 2 - Logic Operators
-p We often need compund statements: (5 < 10) AND (Pigs can fly)
-p ... i.e T AND F = F
+p We often need compund statements: (5 < 10) AND (Pigs can fly) ... i.e T AND F = F
 p This is similar to e.g. 3 + 4 = 7, as we define Boolean operators on &#120121; like arithmetic operators on &#8469;
 
 p We will use the symbol "⇐⇒" to mean "is equivalent to", i.e. "takes the same truth value as"
 p We write "A ⇐⇒ B ⇐⇒ C" as an abbreviation for "A ⇐⇒ B and B ⇐⇒ C"
 
-h5 Boolean operators:
-table.bop
+h5.text-center Boolean operators:
+table.bop.text-center.m-auto
     tr
         td.top &#xac;A
         td.top NOT A
@@ -29,10 +28,10 @@ table.bop
         td.bot A⇒B and B⇒A
         td.bot equivalence
 
-h4 Negation
+h4.text-center Negation
 p Negation (NOT A): &#xac;A
 p True if A false, false if A true
-table.bop
+table.bop.text-center.m-auto
     tr
         th.full A
         th.full &#xac;A
@@ -47,10 +46,10 @@ p
 p &#xac;[5 < 10] ⇐⇒ &#xac;T ⇐⇒ F
 p &#xac;[Pigs can  fly] ⇐⇒ &#xac;F ⇐⇒ T
 
-h4 Conjunction
+h4.text-center Conjunction
 p Conjunction (A AND B): A&#8743;B
 p True if both A and B true
-table.bop
+table.bop.text-center.m-auto
     tr
         th.full A
         th.full B
@@ -75,10 +74,10 @@ p
     i Examples
 p [5 < 10] &#8743; [Pigs can fly] ⇐⇒ T &#8743; F ⇐⇒ F
 
-h4 Disjunction
+h4.text-center Disjunction
 p Disjunction (A OR B): A&#8743;B
 p True if either A or B true (or both)
-table.bop
+table.bop.text-center.m-auto
     tr
         th.full A
         th.full B
@@ -103,7 +102,7 @@ p
     i Examples
 p [5 < 10] &#x2228; [Pigs can fly] ⇐⇒ T &#x2228; F ⇐⇒ T
 
-h4 Implication
+h4.text-center Implication
 p Implication (IF A THEN B): A⇒B
 p In everyday life, often ambigous:
 p &nbsp;&nbsp; If the bird is happy, then it sings
@@ -111,7 +110,7 @@ p Happy: always sings
 p Unhappy: never sings? may or may not sing?
 
 p True if A false; true if both A and B true; false otherwise
-table.bop
+table.bop.text-center.m-auto
     tr
         th.full A
         th.full B
@@ -148,7 +147,7 @@ p T =⇒ Grass is green
 p Although this is a joke, the reasoning is esentially correct!
 
 p Implication A ⇒ B can have many disguises:
-table.table-borderless
+table.table-borderless.text-center.m-auto
     tr
         td A implies B&nbsp;
         td B is implied by A
@@ -168,11 +167,11 @@ p For a number to be divisible by 4, it is necessary that it is even
 p For a triangle to be isosceles, it is sufficient that it is equilateral
 p (NB: isosceles = "has two equal sides", equilateral = "has three equal sides")
 
-h4 Equivalence
+h4.text-center Equivalence
 p Equivalence (A IF AND ONLY IF B): A⇔B
 p True if A and B agree; false otherwise
 
-table.bop
+table.bop.text-center.m-auto
     tr
         th.full A
         th.full B

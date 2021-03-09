@@ -1,0 +1,157 @@
+h1 Section 4 - Bound and Free variables
+p Quantifier variable can be changed
+.border.border-dark.p-3
+  p &#8704;p &#8712; Pies : “p is not as bad as it looks” ⇐⇒
+  p &#8704;π &#8712; Pies : “π is not as bad as it looks”
+p
+  | Variable under a quantifier 
+  i bound
+  | , otherwise 
+  i free
+p
+  i Example:
+.border.border-dark.p-3
+  p 
+    | &exist;y &#8712; &#8469; : x > y, where x 
+    i free
+    | , y 
+    i bound
+p Truth value depends on x, but not on y, and the predicates are:
+p 
+  | P(x, y) ⇐⇒ x > y, where x, y 
+  i free
+p
+  | Q(x) ⇐⇒ &exist;y &#8712; &#8469; : x > y, where x 
+  i free
+  | , y 
+  i bound
+p
+  i More examples:
+.border.border-dark.p-3
+  p
+    | P(x, y) ⇐⇒ x > y, where x, y 
+    i free
+  p
+    | P(u, v) ⇐⇒ u > v, where u, v 
+    i free
+  p
+    | Q
+    sub 1
+    | (x) ⇐⇒ P(x, 5) ⇐⇒ x > 5, where x 
+    i free
+  p
+    | Q
+    sub 2
+    | (z) ⇐⇒ P(3, z) ⇐⇒ 3 > z, where z 
+    i free
+  p
+    | Q
+    sub 3
+    | (y) ⇐⇒ &#8704;x : P(x, y) ⇐⇒ &#8704;u : P(u, y) ⇐⇒ &#8704;u : u > y, where y 
+    i free
+    | , x, u 
+    i bound
+  p
+    | Q
+    sub 4
+    | (v) ⇐⇒ &exist;y : P(v, y) ⇐⇒ &exist;w : P(v,w) ⇐⇒ &exist;w : v > w, where v 
+    i free
+    | , y, w 
+    i bound
+  p
+    | Q
+    sub 5 
+    | ⇐⇒ &exist;z : P(0, z) ⇐⇒ &exist;z : 0 > z ⇐⇒ F, where z 
+    i bound
+  p
+    | Q
+    sub 6 
+    | ⇐⇒ &#8704;y : &exist;x : P(x, y) ⇐⇒ &#8704;y : &exist;x : x > y ⇐⇒ T, where x, y 
+    i bound
+  p
+    | Q
+    sub 7 
+    | ⇐⇒ P(3, 5) ⇐⇒ 3 > 5 ⇐⇒ F
+
+p 
+  | Suppose set S finite: S = {a
+  sub 1
+  | , ... , a
+  sub n
+  | }
+p
+  | &#8704;x &#8712; S : P(x) ⇐⇒ P(a
+  sub 1
+  | ) &#8743; ... &#8743; P(a
+  sub n
+  | )
+p
+  | &exist;x &#8712; S : P(x) ⇐⇒ P(a
+  sub 1
+  | ) &#x2228; ... &#x2228; P(a
+  sub n
+  | )
+p
+  | On a 
+  i finite 
+  | range, quantifiers can be expressed by Boolean operators
+p
+  | Not so on an 
+  i infinite 
+  | range
+p
+  | Another example: S = {a
+  sub 1
+  | , a
+  sub 2
+  | , ... , a
+  sub 100
+  | }
+.border.border-dark.p-3
+  p &#8704;x &#8712; S : &exist;y &#8712; S : f (x, y) ⇐⇒
+  p
+    | ((f(a
+    sub 1
+    | , a
+    sub 1
+    | ) &#x2228; f(a
+    sub 1
+    | , a
+    sub 2
+    | ) &#x2228; ... &#x2228; f(a
+    sub 1
+    | , a
+    sub 100
+    | ))&#8743;
+  p
+    | (f(a
+    sub 2
+    | , a
+    sub 1
+    | ) &#x2228; f(a
+    sub 2
+    | , a
+    sub 2
+    | ) &#x2228; ... &#x2228; f(a
+    sub 2
+    | , a
+    sub 100
+    | ))&#8743;
+  p .
+  p .
+  p .
+  p
+    | (f(a
+    sub 100
+    | , a
+    sub 1
+    | ) &#x2228; f(a
+    sub 100
+    | , a
+    sub 2
+    | ) &#x2228; ... &#x2228; f(a
+    sub 100
+    | , a
+    sub 100
+    | )))
+br

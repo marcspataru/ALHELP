@@ -1,0 +1,135 @@
+h1 Section 2 - Truth table for compound statement
+p Truth tables completely define logical operators, and let us find the value of compound statements
+p
+  i Example: 
+  | (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+table.bop.m-auto
+  tr
+    th.full A
+    th.full B
+    th.full &#xac;A
+    th.full &#xac;A ⇒ B
+    th.full &#xac;B
+    th.full &#xac;B ⇒ A
+    th.full (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+  tr
+    td T
+    td T
+    td F
+    td T
+    td F
+    td T
+    td T
+  tr
+    td T
+    td F
+    td F
+    td T
+    td T
+    td T
+    td T
+  tr
+    td F
+    td T
+    td T
+    td T
+    td F
+    td T
+    td T
+  tr
+    td F
+    td F
+    td T
+    td F
+    td T
+    td F
+    td T
+  tr
+    td.bot
+    td.bot
+    td.bot
+    td.bot
+    td.bot
+    td.bot
+    td.bot *
+p Alternative layout style - useful for large formulae
+p
+  i Example: 
+  | (&#xac;A ⇒ B) ⇔ (&#xac;B ⇒ A)
+table.bop.m-auto
+  tr
+    th.full A
+    th.full B
+    th.full (&#xac;
+    th.full A
+    th.full ⇒ 
+    th.full B)
+    th.full ⇔
+    th.full (&#xac;
+    th.full B
+    th.full ⇒
+    th.full A)
+  tr
+    td T
+    td T
+    td F
+    td T
+    td T
+    td T
+    td T
+    td F
+    td T
+    td T
+    td T
+  tr
+    td T
+    td F
+    td F
+    td T
+    td T
+    td F
+    td T
+    td T
+    td F
+    td T
+    td T
+  tr
+    td F
+    td T
+    td T
+    td F
+    td T
+    td T
+    td T
+    td F
+    td T
+    td T
+    td F
+  tr
+    td F
+    td F
+    td T
+    td F
+    td F
+    td F
+    td T
+    td T
+    td F
+    td F
+    td F
+  tr
+    td.bot 
+    td.bot
+    td.bot
+    td.bot
+    td.bot
+    td.bot
+    td.bot *
+    td.bot 
+    td.bot
+    td.bot
+    td.bot
+p Using truth tables is not always convenient:
+p &#xac;((&#xac;A &#8743; B) &#x2228; (C &#8743; &#xac;D)) ⇔ (A &#8743; &#xac;C) &#x2228; (A &#8743; D) &#x2228; (&#xac;B &#8743; &#xac;C) &#x2228; (&#xac;B &#8743; D)
+p Is this true for all A, B, C and D?
+p To simplify Boolean expressions, we will use laws of logic:

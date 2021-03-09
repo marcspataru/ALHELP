@@ -37,6 +37,9 @@
     width: 100%;
     height: 100%;
 }
+.fullwh:hover {
+    background-color: #343A40;
+}
 #quiz img{
     width: 100%;
 }
@@ -45,4 +48,7 @@
 }
 .col-8 {
     padding: 0;
+}
+div.border * {
+    margin-bottom: 0;
 }

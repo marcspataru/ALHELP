@@ -2,16 +2,16 @@ const constants = require('../constants_utils.js');
 const User = require('../models/User');
 const Course = require('../models/Course');
 
-module.exports.personal_tab_get = async (req, res) => {
+module.exports.learning_preferences_get = async (req, res) => {
 	const user = req.session.user;
 	if(user.indicators.arIndicator) {
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE, ilsResults: { arIndicator: user.indicators.arIndicator, siIndicator: user.indicators.siIndicator, vvIndicator: user.indicators.vvIndicator, sgIndicator: user.indicators.sgIndicator } });
+		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE, ilsResults: { arIndicator: user.indicators.arIndicator, siIndicator: user.indicators.siIndicator, vvIndicator: user.indicators.vvIndicator, sgIndicator: user.indicators.sgIndicator } });
 	} else {
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE });
+		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE });
 	}
 }
 
-module.exports.personal_tab_post = async (req, res) => {
+module.exports.learning_preferences_post = async (req, res) => {
 	try {
 		const user = req.session.user;
 		let arIndex = 1;
@@ -89,10 +89,10 @@ module.exports.personal_tab_post = async (req, res) => {
 		}};
 		let doc = await User.findOneAndUpdate(filter, update);
 		//console.log('found user with name: ', doc.name);/
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE, data: req.body, ilsResults: { arIndicator, siIndicator, vvIndicator, sgIndicator } });
+		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE, data: req.body, ilsResults: { arIndicator, siIndicator, vvIndicator, sgIndicator } });
 	}
 	catch(err) {
-		res.render(constants.PERSONAL_TAB_PAGE_NAME, { title: constants.PERSONAL_TAB_PAGE_TITLE, data: req.body, error: err.message + ' Please try again.' });
+		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE, data: req.body, error: err.message + ' Please try again.' });
 	}
 }
 
@@ -111,12 +111,14 @@ module.exports.courses_get = async (req, res) => {
 				if(doc.lessons.length <= user.courses[i].completion) {
 					obj = {
 						name: doc.name,
+						numberOfLessons: doc.lessons.length,
 						completion: user.courses[i].completion,
 						completed: true
 					};
 				} else {
 					obj = {
 						name: doc.name,
+						numberOfLessons: doc.lessons.length,
 						completion: user.courses[i].completion,
 						completed: false
 					};

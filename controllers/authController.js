@@ -25,7 +25,7 @@ module.exports.login_post = async (req, res) => {
 		const token = jwt.sign(payload, secret, options);
 		res.cookie(constants.JWT_COOKIE_NAME, token, { httpOnly: true, MAX_AGE: constants.MAX_AGE * 1000 });
 		req.session.error = null;
-		res.redirect(constants.PERSONAL_TAB_URL);
+		res.redirect(constants.LEARNING_PREFERENCES_URL);
 	}
 	catch(err) {
 		res.render(constants.LOGIN_PAGE_NAME, {
@@ -63,7 +63,7 @@ module.exports.register_post = async (req, res) => {
 		const secret = process.env.JWT_SECRET;
 		const token = jwt.sign(payload, secret, options);
 		res.cookie(constants.JWT_COOKIE_NAME, token, { httpOnly: true, MAX_AGE: constants.MAX_AGE * 1000 });
-		res.redirect(constants.PERSONAL_TAB_URL);
+		res.redirect(constants.LEARNING_PREFERENCES_URL);
 	}
 	catch(err) {
 		if(err.code === 11000) {

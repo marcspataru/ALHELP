@@ -1,0 +1,33 @@
+h1 Section 3 - Predicates as functions
+p You can also think of predicates as functions, e.g.,
+p
+  strong boolean 
+  | areFriend (
+  strong Person 
+  | x, 
+  strong Person
+  | y) {
+p &nbsp;&nbsp;if x and y are friends then return(T)
+p &nbsp;&nbsp;else return(F)
+p }
+p ...and another example that &exist; and &#8469; are not commutative, e.g., compare
+.border.border-dark.p-3
+  p &#8704;x &#8712; Class130 : &exist;y &#8712; Class130 : areFriends(x, y) vs.
+  p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : areFriends(x, y)
+  p What is Class130?
+p Find all the predicates in
+p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : areFriends(x, y) (1)
+ul
+  li
+    | 1
+    sup st 
+    | one: 
+    i areFriends(x, y)
+  li
+    | 2
+    sup nd
+    | one: 
+    i popular(x) 
+    | ⇐⇒ &#8704;y &#8712; Class130 : areFriends(x, y) and (1) can be rewritten as &exist;x : popular(x)
+p What about
+p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : &exist;z &#8712; Class130 : areFriends(x, y, z)?

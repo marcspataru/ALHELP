@@ -26,8 +26,8 @@ router.post('/register', [
         }).withMessage('Passwords do not match')
     ], authController.register_post);
 router.get('/logout', authController.logout_get);
-router.get('/personal-tab', validateToken, userController.personal_tab_get);
-router.post('/personal-tab', validateToken, userController.personal_tab_post);
+router.get('/learning-preferences', validateToken, userController.learning_preferences_get);
+router.post('/learning-preferences', validateToken, userController.learning_preferences_post);
 router.get('/courses', validateToken, userController.courses_get);
 router.get('/courses/logic', validateToken, coursesController.logic_get);
 router.post('/courses/logic', validateToken, coursesController.logic_post);

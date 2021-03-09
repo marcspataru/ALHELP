@@ -1,0 +1,37 @@
+h1 Section 5 - Laws of predicate logic
+.border.border-dark.p-3
+  p (&#8704;x : T) ⇐⇒ T, (&#8704;x : F) ⇐⇒ F
+  p (&exist;x : T) ⇐⇒ T, (&exist;x : F) ⇐⇒ F
+p
+  | Assuming Q does not contain 
+  i free 
+  | x:
+.border.border-dark.p-3
+  p &#8704;x : (P(x) &#8743; Q) ⇐⇒ (&#8704;x : P(x)) &#8743; Q
+  p &exist;x : (P(x) &#8743; Q) ⇐⇒ (&exist;x : P(x)) &#8743; Q
+p These hold also for ... &#x2228; Q
+p De Morgan's laws for predicates:
+.border.border-dark.p-3
+  p &#xac;&#8704;x : P(x) ⇐⇒ &exist;x : &#xac;P(x)
+  p &#xac;&exist;x : P(x) ⇐⇒ &#8704;x : &#xac;P(x)
+p Quantifiers — handle with care!
+.border.border-dark.p-3
+  p &#8704;x : (P(x) &#8743; Q(x)) ⇐⇒ (&#8704;x : P(x)) &#8743; (&#8704;x : Q(x))
+  p &exist;x : (P(x) &#x2228; Q(x)) ⇐⇒ (&exist;x : P(x)) &#x2228; (&exist;x : Q(x))
+p But:
+.border.border-dark.p-3
+  p &#8704;x : (P(x) &#x2228; Q(x)) <=/=> (&#8704;x : P(x)) &#x2228; (&#8704;x : Q(x)) (why?)
+p However, "⇐=" holds
+.border.border-dark.p-3
+  p &exist;x : (P(x) &#8743; Q(x)) <=/=> (&exist;x : P(x)) &#8743; (&exist;x : Q(x)) (why?)
+p However, "=⇒" holds
+p Using quantifiers — an example
+.border.border-dark.p-3
+  p P(x) true for at least one x in S: &exist;x &#8712; S : P(x)
+  p P(x) true for exactly one x in S:
+  p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : P(y) ⇒ (x = y)) ⇐⇒
+  p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : (x &#8800; y) ⇒ &#xac;P(y)) ⇐⇒
+  p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : (x = y) &#x2228; &#xac;P(y)) ⇐⇒
+  p &exist;x &#8712; S : (P(x) &#8743; &#xac;&exist;y &#8712; S : (x &#8800; y) &#8743; P(y))
+p Notation: &exist;!x &#8712; S : P(x)
+br

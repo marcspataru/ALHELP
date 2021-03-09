@@ -1,320 +1,52 @@
 extends ../../header
 block content
-    .container
-        .row
-            .col-2
-                a(class='fullwh' href='#' id='arrow-left')
-                    img(class='arrow' src='/img/arrow-left.png')
-            .col-8
-                h1= lesson
-                #section1
-                    h1 Section 1 - Variables
-                    p So far we have been making statements about individual objects:
-                    p
-                        i Five is less than ten
-                    p
-                        i This pie is not as bad as it looks
-                    p Often need to say more:
-                    p
-                        i All natural numbers are at least 0
-                    p
-                        i All natural numbers are less than ten
-                    p
-                        i Some natural numbers are even
-                    p
-                        i Some fruit pies are not as bad as they look
-                    p We could try to specify an instance:
-                    p Some natural numbers are even
-                    p
-                        i Eight is even
-                    p But what if we do not have an instance?
-                    p We could try to use Boolean operators:
-                    p All natural numbers are less than ten
-                    p (0 < 10) &#8743; (1 < 10) &#8743; (2 < 10) &#8743; (3 < 10) &#8743; ...
-                    p But we cannot have an infinite conjunction/disjunction!
-
-                    p
-                        | A 
-                        i predicate 
-                        | is a sentence with variables, which becomes true or false when values are substituted for variables
-                    p For each variable, its values are taken from a particular set (the variable’s range)
-                    p We always assume the range is nonempty
-                    p
-                        i Examples:
-                    p x < 10 (x in &#8469;)
-                    p "Pie p is not as bad as it looks" (p in Pies)
-                    p Both can be true or false, depending on the value of x, p
-                    p A predicate can have more than one variable
-                    p
-                        i Examples:
-                    p x < y (x, y in &#8469;)
-                    p "Pie p is better than pie q" (p, q in Pies)
-                    p A predicate with no variables is an ordinary statement
-                    p
-                        i Examples:
-                    p 5 < 10
-                    p "This apple-and-cranberry pie is better than that cabbage-and-leek pie"
-                #section2
-                    h1 Section 2 - Quantifiers
-                    p Let P(x) be a predicate with variable x
-                    p Can make statements by quantifiers
-                    p Existential (FOR SOME x, P(x)): &exist;x : P(x)
-                    p Universal (FOR ALL x, P(x)): &#8704;x : P(x)
-                    p A particular range of x is always assumed, and often made explicit
-                    p
-                        i Examples:
-                    ul
-                        li &exist;x &#8712; &#8469; : x < 10
-                        li &#8704;p &#8712; Pies : "p is not as bad as it looks"
-                        li &#8704;x &#8712; &#8469; : &exist;y &#8712; &#8469; : x < y
-                        li &exist;y &#8712; &#8469; : &#8704;x &#8712; &#8469; : x < y — note the difference!
-                #section3
-                    h1 Section 3 - Predicates as functions
-                    p You can also think of predicates as functions, e.g.,
-                    p
-                        strong boolean 
-                        | areFriend (
-                        strong Person 
-                        | x, 
-                        strong Person
-                        | y) {
-                    p &nbsp;&nbsp;if x and y are friends then return(T)
-                    p &nbsp;&nbsp;else return(F)
-                    p }
-                    p ...and another example that &exist; and &#8469; are not commutative, e.g., compare
-                    p &#8704;x &#8712; Class130 : &exist;y &#8712; Class130 : areFriends(x, y) vs.
-                    p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : areFriends(x, y)
-                    p What is Class130?
-                    p Find all the predicates in
-                    p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : areFriends(x, y) (1)
-                    ul
-                        li
-                            | 1
-                            sup st 
-                            | one: 
-                            i areFriends(x, y)
-                        li
-                            | 2
-                            sup nd
-                            | one: 
-                            i popular(x) 
-                            | ⇐⇒ &#8704;y &#8712; Class130 : areFriends(x, y) and (1) can be rewritten as &exist;x : popular(x)
-                    p What about
-                    p &exist;x &#8712; Class130 : &#8704;y &#8712; Class130 : &exist;z &#8712; Class130 : areFriends(x, y, z)?
-                #section4
-                    h1 Section 4 - Bound and Free variables
-                    p Quantifier variable can be changed
-                    p &#8704;p &#8712; Pies : “p is not as bad as it looks” ⇐⇒
-                    p &#8704;π &#8712; Pies : “π is not as bad as it looks”
-                    p
-                        | Variable under a quantifier 
-                        i bound
-                        | , otherwise 
-                        i free
-                    p
-                        i Example:
-                    p 
-                        | &exist;y &#8712; &#8469; : x > y, where x 
-                        i free
-                        | , y 
-                        i bound
-                    p Truth value depends on x, but not on y
-                    p ...and the predicates are:
-                    p 
-                        | P(x, y) ⇐⇒ x > y, where x, y 
-                        i free
-                    p
-                        | Q(x) ⇐⇒ &exist;y &#8712; &#8469; : x > y, where x 
-                        i free
-                        | , y 
-                        i bound
-                    p
-                        i More examples:
-                    p
-                        | P(x, y) ⇐⇒ x > y, where x, y 
-                        i free
-                    p
-                        | P(u, v) ⇐⇒ u > v, where u, v 
-                        i free
-                    p
-                        | Q
-                        sub 1
-                        | (x) ⇐⇒ P(x, 5) ⇐⇒ x > 5, where x 
-                        i free
-                    p
-                        | Q
-                        sub 2
-                        | (z) ⇐⇒ P(3, z) ⇐⇒ 3 > z, where z 
-                        i free
-                    p
-                        | Q
-                        sub 3
-                        | (y) ⇐⇒ &#8704;x : P(x, y) ⇐⇒ &#8704;u : P(u, y) ⇐⇒ &#8704;u : u > y, where y 
-                        i free
-                        | , x, u 
-                        i bound
-                    p
-                        | Q
-                        sub 4
-                        | (v) ⇐⇒ &exist;y : P(v, y) ⇐⇒ &exist;w : P(v,w) ⇐⇒ &exist;w : v > w, where v 
-                        i free
-                        | , y, w 
-                        i bound
-                    p
-                        | Q
-                        sub 5 
-                        | ⇐⇒ &exist;z : P(0, z) ⇐⇒ &exist;z : 0 > z ⇐⇒ F, where z 
-                        i bound
-                    p
-                        | Q
-                        sub 6 
-                        | ⇐⇒ &#8704;y : &exist;x : P(x, y) ⇐⇒ &#8704;y : &exist;x : x > y ⇐⇒ T, where x, y 
-                        i bound
-                    p
-                        | Q
-                        sub 7 
-                        | ⇐⇒ P(3, 5) ⇐⇒ 3 > 5 ⇐⇒ F
-
-                    p 
-                        | Suppose set S finite: S = {a
-                        sub 1
-                        | , ... , a
-                        sub n
-                        | }
-                    p
-                        | &#8704;x &#8712; S : P(x) ⇐⇒ P(a
-                        sub 1
-                        | ) &#8743; ... &#8743; P(a
-                        sub n
-                        | )
-                    p
-                        | &exist;x &#8712; S : P(x) ⇐⇒ P(a
-                        sub 1
-                        | ) &#x2228; ... &#x2228; P(a
-                        sub n
-                        | )
-                    p
-                        | On a 
-                        i finite 
-                        | range, quantifiers can be expressed by Boolean operators
-                    p
-                        | Not so on an 
-                        i infinite 
-                        | range
-                    p
-                        | Another example: S = {a
-                        sub 1
-                        | , a
-                        sub 2
-                        | , ... , a
-                        sub 100
-                        | }
-                    p &#8704;x &#8712; S : &exist;y &#8712; S : f (x, y) ⇐⇒
-                    p
-                        | ((f(a
-                        sub 1
-                        | , a
-                        sub 1
-                        | ) &#x2228; f(a
-                        sub 1
-                        | , a
-                        sub 2
-                        | ) &#x2228; ... &#x2228; f(a
-                        sub 1
-                        | , a
-                        sub 100
-                        | ))&#8743;
-                    p
-                        | (f(a
-                        sub 2
-                        | , a
-                        sub 1
-                        | ) &#x2228; f(a
-                        sub 2
-                        | , a
-                        sub 2
-                        | ) &#x2228; ... &#x2228; f(a
-                        sub 2
-                        | , a
-                        sub 100
-                        | ))&#8743;
-                    p .
-                    p .
-                    p .
-                    p
-                        | (f(a
-                        sub 100
-                        | , a
-                        sub 1
-                        | ) &#x2228; f(a
-                        sub 100
-                        | , a
-                        sub 2
-                        | ) &#x2228; ... &#x2228; f(a
-                        sub 100
-                        | , a
-                        sub 100
-                        | )))
-                #section5
-                    h1 Section 5 - Laws of predicate logic
-                    p (&#8704;x : T) ⇐⇒ T, (&#8704;x : F) ⇐⇒ F
-                    p (&exist;x : T) ⇐⇒ T, (&exist;x : F) ⇐⇒ F
-                    p
-                        | Assuming Q does not contain 
-                        i free 
-                        | x:
-                    p &#8704;x : (P(x) &#8743; Q) ⇐⇒ (&#8704;x : P(x)) &#8743; Q
-                    p &exist;x : (P(x) &#8743; Q) ⇐⇒ (&exist;x : P(x)) &#8743; Q
-                    p These hold also for ... &#x2228; Q
-                    p De Morgan's laws for predicates:
-                    p &#xac;&#8704;x : P(x) ⇐⇒ &exist;x : &#xac;P(x)
-                    p &#xac;&exist;x : P(x) ⇐⇒ &#8704;x : &#xac;P(x)
-                    p Quantifiers — handle with care!
-                    p &#8704;x : (P(x) &#8743; Q(x)) ⇐⇒ (&#8704;x : P(x)) &#8743; (&#8704;x : Q(x))
-                    p &exist;x : (P(x) &#x2228; Q(x)) ⇐⇒ (&exist;x : P(x)) &#x2228; (&exist;x : Q(x))
-                    p But:
-                    p &#8704;x : (P(x) &#x2228; Q(x)) <=/=> (&#8704;x : P(x)) &#x2228; (&#8704;x : Q(x)) (why?)
-                    p However, "⇐=" holds
-                    p &exist;x : (P(x) &#8743; Q(x)) <=/=> (&exist;x : P(x)) &#8743; (&exist;x : Q(x)) (why?)
-                    p However, "=⇒" holds
-                    p Using quantifiers — an example
-                    p P(x) true for at least one x in S: &exist;x &#8712; S : P(x)
-                    p P(x) true for exactly one x in S:
-                    p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : P(y) ⇒ (x = y)) ⇐⇒
-                    p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : (x &#8800; y) ⇒ &#xac;P(y)) ⇐⇒
-                    p &exist;x &#8712; S : (P(x) &#8743; &#8704;y &#8712; S : (x = y) &#x2228; &#xac;P(y)) ⇐⇒
-                    p &exist;x &#8712; S : (P(x) &#8743; &#xac;&exist;y &#8712; S : (x &#8800; y) &#8743; P(y))
-                    p Notation: &exist;!x &#8712; S : P(x)
-                #quiz
-                    h1= `${lesson} - Quiz`
-                    if docs
-                        form(method="POST")
-                            - let i = 1;
-                            input(type='hidden' name='lessonShort' value=lessonShort)
-                            input(type='hidden' name='questions' value=docs)
-                            for question in docs
-                                label= `Question ${i}:`
-                                br 
-                                - let qWeight = 1 / docs.length;
-                                input(type="hidden" name='qWeight' value=qWeight)
-                                img(src=question.qText alt='The image path is broken')
-                                br
-                                button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Show me the answer(s)!
-                                div(class='collapse' id=`collapse${i}`)
-                                    .card.card-body
-                                        img(src=question.qAnswer alt='The image path is broken')
-                                .form-check
-                                    input.form-check-input(type='radio' name=`${question._id}` value=`a1` required)
-                                    label.form-check-label(for=`${question._id}`) Everything is clear!
-                                .form-check 
-                                    input.form-check-input(type='radio' name=`${question._id}` value=`a2` required)
-                                    label.form-check-label(for=`${question._id}`) I understand most of it.
-                                .form-check 
-                                    input.form-check-input(type='radio' name=`${question._id}` value=`a3` required)
-                                    label.form-check-label(for=`${question._id}`) This answer is confusing for the most part.
-                                - i++;
-                            input(type='submit' value='Submit answers' class='btn btn-info')
-            .col-2
-                a(class='fullwh' href='#' id='arrow-right') 
-                    img(class='arrow' src='/img/arrow-right.png')
-    script(src='/js/slider.js' data-numberOfSections=`${numberOfSections}`)
+	.container
+		.row
+			.col-2
+				a(class='fullwh' href='#' id='arrow-left')
+					img(class='arrow' src='/img/arrow-left.png')
+			.col-8
+				h1= lesson
+				#section1
+					include section1bm
+				#section2
+					include section2bm
+				#section3
+					include section3bm
+				#section4
+					include section4bm
+				#section5
+					include section5bm
+				#quiz
+					h1= `${lesson} - Quiz`
+					if docs
+						form(method="POST")
+							- let i = 1;
+							input(type='hidden' name='lessonShort' value=lessonShort)
+							input(type='hidden' name='questions' value=docs)
+							for question in docs
+								label= `Question ${i}:`
+								br 
+								- let qWeight = 1 / docs.length;
+								input(type="hidden" name='qWeight' value=qWeight)
+								img(src=question.qText alt='The image path is broken')
+								br
+								button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Show me the answer(s)!
+								div(class='collapse' id=`collapse${i}`)
+									.card.card-body
+										img(src=question.qAnswer alt='The image path is broken')
+								.form-check
+									input.form-check-input(type='radio' name=`${question._id}` value=`a1` required)
+									label.form-check-label(for=`${question._id}`) Everything is clear!
+								.form-check 
+									input.form-check-input(type='radio' name=`${question._id}` value=`a2` required)
+									label.form-check-label(for=`${question._id}`) I understand most of it.
+								.form-check 
+									input.form-check-input(type='radio' name=`${question._id}` value=`a3` required)
+									label.form-check-label(for=`${question._id}`) This answer is confusing for the most part.
+								- i++;
+							input(type='submit' value='Submit answers' class='btn btn-info')
+			.col-2
+				a(class='fullwh' href='#' id='arrow-right') 
+					img(class='arrow' src='/img/arrow-right.png')
+	script(src='/js/slider.js' data-numberOfSections=`${numberOfSections}`)

@@ -7,18 +7,26 @@ block content
             .error
                 p= error
         if ilsResults
-            p You have already completed the Index Learning Style questionnaire. Your learning preferences are:
+            h3 Results
+            p You have completed the Learning Preferences questionnaire. Your learning preferences indicators (out of 11) are:
             ul
-                li= ilsResults.arIndicator
-                li= ilsResults.siIndicator
-                li= ilsResults.vvIndicator
-                li= ilsResults.sgIndicator
+                li Active/Reflective: 
+                    strong= `${ilsResults.arIndicator}`
+                li Sensing/Intuitive: 
+                    strong= `${ilsResults.siIndicator}`
+                li Visual/Verbal: 
+                    strong= `${ilsResults.vvIndicator}`
+                li Sequential/Global: 
+                    strong= `${ilsResults.sgIndicator}`
         else
             .row
                 .col-2
                     a(class='fullwh' href='#' id='arrow-left')
                         img(class='arrow' src='/img/arrow-left.png')
                 .col-8
+                    div(class='alert alert-primary m-1' role='alert')
+                        | This questionnaire has to be completed only once. This is the only way the system can truly adapt to the users 
+                        | preferences. You need to answer all questions in order to proceed.
                     span Progress
                     form#ils-form(method='POST')
                         #section1

@@ -41,7 +41,6 @@ const displayPage = async (name, req, res) => {
 
 const closeness = (indicators1, indicators2) => {
 	let sum = 0;
-	console.log(indicators2);
 	const ar1 = indicators1.arIndicator.match(/^(Active |Reflective )(\d|\d\d)$/);
 	const ar2 = indicators2.arIndicator.match(/^(Active |Reflective )(\d|\d\d)$/);
 	const si1 = indicators1.siIndicator.match(/^(Sensing |Intuitive )(\d|\d\d)$/);
@@ -64,6 +63,7 @@ const closeness = (indicators1, indicators2) => {
 		if(sg1[1] !== sg2[1])
 			sum += 11;
 	} else {
+		/*
 		console.log(ar1);
 		console.log(ar2);
 		console.log(si1);
@@ -72,9 +72,10 @@ const closeness = (indicators1, indicators2) => {
 		console.log(vv2);
 		console.log(sg1);
 		console.log(sg2);
+		*/
 		throw Error('One or more indicators did not match.')
 	}
-	console.log('sum: ' + sum);
+	//console.log('sum: ' + sum);
 	return sum;
 };
 
@@ -85,9 +86,8 @@ module.exports.logic_get = (req, res) => {
 module.exports.logic_post = async (req, res) => {
 	try {
 		const user = req.session.user;
-		console.log()
 		let questions = JSON.parse(req.body.questions);
-		console.log(questions);
+		//console.log(questions);
 		const course = await Course.findOne({name: constants.LOGIC_PAGE_NAME});
 		let sectionPaths = [];
 		let lessonName = '';
@@ -107,18 +107,23 @@ module.exports.logic_post = async (req, res) => {
 					const altSec = course.lessons[obj].alternativeSections[index];
 					const closenessValue = closeness(user.indicators, altSec.indicators);
 					if(closenessValue < sectionPaths[altSec.section].closeness) {
-						sectionPaths[altSec.section].path = altSec.path; // to do: check if value is within valid range
+						sectionPaths[altSec.section].path = altSec.path;
 						sectionPaths[altSec.section].closeness = closenessValue;
+						sectionPaths[altSec.section].indicators = altSec.indicators;
 					}
 				}
 				break;
 			}
 		}
-		let freqArr = [];
+		let freqArr = new Array();
 		for(let i = 0; i < course.lessons[obj].numberOfSections; i++) {
-			freqArr[i] = '';
-			console.log('sectionPaths[' + i + ']= ');
-			console.log(sectionPaths[i]);
+			const obj = {
+				path: '',
+				indicators: null
+			};
+			freqArr.push(obj);
+			//console.log('sectionPaths[' + i + ']= ');
+			//console.log(sectionPaths[i]);
 		}
 		const qWeights = req.body.qWeight;
 		let qIndex = 0;
@@ -141,9 +146,10 @@ module.exports.logic_post = async (req, res) => {
 				}
 				if(revise === true) {
 					for(section in questions[qIndex].sectionID) {
-						freqArr[section] = sectionPaths[section].path;
+						freqArr[section].path = sectionPaths[section].path;
+						freqArr[section].indicators = sectionPaths[section].indicators;
 					}
-					console.log('The sections which need to be revised are: ' + questions[qIndex].sectionID);
+					//console.log('The sections which need to be revised are: ' + questions[qIndex].sectionID);
 				}
 				qIndex++;
 			}
@@ -172,9 +178,8 @@ module.exports.logic_post = async (req, res) => {
 			if(!err) {
 				let shouldRevise = false;
 				for(let i = 0; i < course.lessons[obj].numberOfSections; i++) {
-					if(freqArr[i]) {
-						console.log('freqArr[' + i + ']');
-						console.log(freqArr[i]);
+					if(freqArr[i].path) {
+						//console.log('freqArr[' + i + ']');
 						shouldRevise = true;
 					}
 				}
@@ -185,7 +190,8 @@ module.exports.logic_post = async (req, res) => {
 					redir = constants.COURSES_PAGE_URL + constants.LOGIC_PAGE_URL;
 				}
 				if(shouldRevise === true) {
-					res.render(constants.LOGIC_PAGE_URL_NAME + '/revise.pug', { title: 'Revision', freqArr: freqArr, lessonName: lessonName, redir: redir });
+					//console.log(freqArr);
+					res.render(constants.LOGIC_PAGE_URL_NAME + '/revise.pug', { title: 'Revision', freqArr: freqArr, lessonName: lessonName, redir: redir, userIndicators: user.indicators });
 				} else {
 					res.redirect(redir);
 				}

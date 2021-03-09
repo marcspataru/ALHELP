@@ -1,21 +1,76 @@
 extends ../header
 block content
   .container
-    h1= lessonName
-    p 
+    h1= `${lessonName} Quiz Revision`
+    div(class='alert alert-primary m-5' role='alert')
       | The system has determined that the following sections might be unclear. In addition, the system has selected alternative 
       | presentations of the content from the respective sections, which are adapted to your learning preferences. 
       | The prototype application does not have any alternative presentations yet, as these have to be produced by an expert in the content.
     -let i = 0; 
+    h3 Your indicators are
+    ul
+      li Active/Reflective: 
+        strong= `${userIndicators.arIndicator}`
+      li Sensing/Intuitive: 
+        strong= `${userIndicators.siIndicator}`
+      li Visual/Verbal: 
+        strong= `${userIndicators.vvIndicator}`
+      li Sequential/Global: 
+        strong= `${userIndicators.sgIndicator}`
     for section in freqArr
-      if section
+      if section.path
         h3= `Section ${i + 1}`
-        button(class='btn btn-primary' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Adapted version
+        button(class='btn btn-primary m-3' type='button' data-toggle='collapse' data-target=`#collapse${i}` aria-expanded='false' aria-controls=`collapse${i}`) Adapted version
         div(class='collapse' id=`collapse${i}`)
           .card.card-body
-            img(src=section alt='The image path is broken')
+            span The section indicators are:
+            -const ar = section.indicators.arIndicator.match(/^(Active |Reflective )(\d|\d\d)$/);
+            -const si = section.indicators.siIndicator.match(/^(Sensing |Intuitive )(\d|\d\d)$/);
+            -const vv = section.indicators.vvIndicator.match(/^(Visual |Verbal )(\d|\d\d)$/);
+            -const sg = section.indicators.sgIndicator.match(/^(Sequential |Global )(\d|\d\d)$/);
+            ul
+              li Active/Reflective: 
+                strong= `${section.indicators.arIndicator}`
+              li Sensing/Intuitive: 
+                strong= `${section.indicators.siIndicator}`
+              li Visual/Verbal: 
+                strong= `${section.indicators.vvIndicator}`
+              li Sequential/Global: 
+                strong= `${section.indicators.sgIndicator}`
+            if ar[1] === 'Active '
+              p 
+                | Being more inclined for Active learners, this alternative section would encourage the student to learn 
+                | by applying the information or explaining it to others.
+            else 
+              p 
+                | Being more inclined for Reflective learners, this alternative section would encourage the student to think 
+                | about the information thoroughly first. Individually reviewing the section or writing short summaries in their own 
+                | words might help the Reflective learner to better understand it.
+            if si[1] === 'Sensing '
+              p 
+                | Designed for Sesning learners, this section would include more learning facts than its counterpart, and would teach the student well established methods, 
+                | with a minimum number of complications and surprises. Sensor learners dislike material with no connection to the real world.
+            else 
+              p 
+                | Designed for Intuitive learners, this section would favour innovation and include little to no repetition. Intuitive learners 
+                | dislike sections with a lot of memorisation and routine calculations.
+            if vv[1] === 'Visual '
+              p 
+                | Including a Visual indicator, this section would contain more diagrams, flowcharts, films, and pictures than usual. 
+            else 
+              p 
+                | Including a Verbal indicator, this section would contain more written words and spoken explanations, such as recordings.
+            if sg[1] === 'Global '
+              p 
+                | Built for Global learners, this section would focus more on students understanding the "big picture" first, rather than 
+                | understanding every detail in each step.
+            else 
+              p 
+                | Built for Sequential learners, this section would focus more on students understanding each logical step in detail in order 
+                | to grasp the "big picture". Each step following logically from the previous one.
+            //img(src=section.path alt='The image path is broken')
       -i++;
     br
     br
     a(href=redir)
-      button(class='btn btn-primary') Got it!
+      button(class='btn btn-primary m-2') Got it!

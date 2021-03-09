@@ -1,0 +1,55 @@
+h1 Section 1 - Variables
+p So far we have been making statements about individual objects:
+.border.border-dark.p-3
+  p
+    i Five is less than ten
+  p
+    i This pie is not as bad as it looks
+p Often need to say more:
+.border.border-dark.p-3
+  p
+    i All natural numbers are at least 0
+  p
+    i All natural numbers are less than ten
+  p
+    i Some natural numbers are even
+  p
+    i Some fruit pies are not as bad as they look
+p We could try to specify an instance:
+.border.border-dark.p-3
+  p 
+    i Some natural numbers are even
+  p
+    i Eight is even
+p But what if we do not have an instance?
+p
+  strong We could try to use Boolean operators:
+p All natural numbers are less than ten
+p (0 < 10) &#8743; (1 < 10) &#8743; (2 < 10) &#8743; (3 < 10) &#8743; ...
+p But we cannot have an infinite conjunction/disjunction!
+
+p
+  | A 
+  i predicate 
+  | is a sentence with variables, which becomes true or false when values are substituted for variables
+p For each variable, its values are taken from a particular set (the variable’s range)
+p We always assume the range is nonempty
+p
+  i Examples:
+.border.border-dark.p-3
+  p x < 10 (x in &#8469;)
+  p "Pie p is not as bad as it looks" (p in Pies)
+  p Both can be true or false, depending on the value of x, p
+p A predicate can have more than one variable
+p
+  i Examples:
+.border.border-dark.p-3
+  p x < y (x, y in &#8469;)
+  p "Pie p is better than pie q" (p, q in Pies)
+p A predicate with no variables is an ordinary statement
+p
+  i Examples:
+.border.border-dark.p-3
+  p 5 < 10
+  p "This apple-and-cranberry pie is better than that cabbage-and-leek pie"
+br
