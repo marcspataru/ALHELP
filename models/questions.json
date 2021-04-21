@@ -1,82 +1,11 @@
-{
-    "q1":{
-        "qText":"/img/q-logic-1-1.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":0,
-        "sectionID":[
-            0, 1
-        ],
-        "qAnswer":"/img/a-logic-1-1.png",
-        "difficulty":0.6
-    },
-    "q2":{
-        "qText":"/img/q-logic-1-2.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":1,
-        "sectionID":[
-            1
-        ],
-        "qAnswer":"/img/a-logic-1-2.png",
-        "difficulty":0.2
-    },
-    "q3":{
-        "qText":"/img/q-logic-3.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":0,
-        "sectionID":[
-            0, 1
-        ],
-        "qAnswer":"/img/a-logic-3.png",
-        "difficulty":0.7
-    },
-    "q4":{
-        "qText":"/img/q-logic-4.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":1,
-        "sectionID":[
-            0
-        ],
-        "qAnswer":"/img/a-logic-4.png",
-        "difficulty":0.7
-    },
-    "q5":{
-        "qText":"/img/q-logic-5.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":2,
-        "sectionID":[
-            0, 1, 2, 3
-        ],
-        "qAnswer":"/img/a-logic-5.png",
-        "difficulty":0.7
-    },
-    "q6":{
-        "qText":"/img/q-logic-6.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":0,
-        "sectionID":[
-            0, 1
-        ],
-        "qAnswer":"/img/a-logic-6.png",
-        "difficulty":0.2
-    },
-    "q7":{
-        "qText":"/img/q-logic-7.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":0,
-        "sectionID":[
-            0, 1, 2
-        ],
-        "qAnswer":"/img/a-logic-7.png",
-        "difficulty":0.5
-    },
-    "q8":{
-        "qText":"/img/q-logic-8.png",
-        "courseID":"6021b8e93dc03b2c9c2ce6a7",
-        "lessonID":2,
-        "sectionID":[
-            0, 1, 2, 3
-        ],
-        "qAnswer":"/img/a-logic-8.png",
-        "difficulty":0.5
-    }
-}
+[{
+  "qText": "/img/q-logic-9.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 1,
+  "sectionID": [
+    0,
+    1
+  ],
+  "qAnswer": "/img/a-logic-9.png",
+  "difficulty": 0.5
+}]

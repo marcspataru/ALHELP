@@ -40,6 +40,8 @@ const displayPage = async (name, req, res) => {
 };
 
 const closeness = (indicators1, indicators2) => {
+	console.log('1 ' + indicators1);
+	console.log('2 ' + indicators2);
 	let sum = 0;
 	const ar1 = indicators1.arIndicator.match(/^(Active |Reflective )(\d|\d\d)$/);
 	const ar2 = indicators2.arIndicator.match(/^(Active |Reflective )(\d|\d\d)$/);
@@ -50,32 +52,25 @@ const closeness = (indicators1, indicators2) => {
 	const sg1 = indicators1.sgIndicator.match(/^(Sequential |Global )(\d|\d\d)$/);
 	const sg2 = indicators2.sgIndicator.match(/^(Sequential |Global )(\d|\d\d)$/);
 	if(ar1 && ar2 && si1 && si2 && vv1 && vv2 && sg1 && sg2) {
-		sum += Math.abs(ar1[2] - ar2[2]);
-		sum += Math.abs(si1[2] - si2[2]);
-		sum += Math.abs(vv1[2] - vv2[2]);
-		sum += Math.abs(sg1[2] - sg2[2]);
-		if(ar1[1] !== ar2[1]) 
-			sum += 11;
+		if(ar1[1] !== ar2[1])
+			sum += +ar1[2] + +ar2[2];
+		else
+			sum += Math.abs(ar1[2] - ar2[2]);
 		if(si1[1] !== si2[1])
-			sum += 11;
+			sum += +si1[2] + +si2[2];
+		else
+			sum += Math.abs(si1[2] - si2[2]);
 		if(vv1[1] !== vv2[1])
-			sum += 11;
+			sum += +vv1[2] + +vv2[2];
+		else
+			sum += Math.abs(vv1[2] - vv2[2]);
 		if(sg1[1] !== sg2[1])
-			sum += 11;
+			sum += +sg1[2] + +sg2[2];
+		else
+			sum += Math.abs(sg1[2] - sg2[2]);
 	} else {
-		/*
-		console.log(ar1);
-		console.log(ar2);
-		console.log(si1);
-		console.log(si2);
-		console.log(vv1);
-		console.log(vv2);
-		console.log(sg1);
-		console.log(sg2);
-		*/
 		throw Error('One or more indicators did not match.')
 	}
-	//console.log('sum: ' + sum);
 	return sum;
 };
 
@@ -159,10 +154,10 @@ module.exports.logic_post = async (req, res) => {
 		}
 		user.performance = user.performance + score * quizWeight;
 		if(user.performance < 0) {
-			user.performance = 0;
+			user.performance = 0.01;
 		}
 		if(user.performance > 1) {
-			user.performance = 1;
+			user.performance = 0.99;
 		}
 		let correspondingID = -1;
 		for(ids in user.courses) {
@@ -185,6 +180,7 @@ module.exports.logic_post = async (req, res) => {
 				}
 				let redir = '#';
 				if(user.courses[correspondingID].completion === course.lessons.length) {
+					console.log('course completed!');
 					redir = constants.COURSES_PAGE_URL;
 				} else {
 					redir = constants.COURSES_PAGE_URL + constants.LOGIC_PAGE_URL;
