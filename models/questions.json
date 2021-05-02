@@ -1,4 +1,114 @@
 [{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc3"
+  },
+  "qText": "/img/q-logic-1-1.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 0,
+  "sectionID": [
+    0,
+    1
+  ],
+  "qAnswer": "/img/a-logic-1-1.png",
+  "difficulty": 0.6
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc4"
+  },
+  "qText": "/img/q-logic-1-2.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 1,
+  "sectionID": [
+    1
+  ],
+  "qAnswer": "/img/a-logic-1-2.png",
+  "difficulty": 0.2
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc5"
+  },
+  "qText": "/img/q-logic-3.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 0,
+  "sectionID": [
+    0,
+    1
+  ],
+  "qAnswer": "/img/a-logic-3.png",
+  "difficulty": 0.7
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc6"
+  },
+  "qText": "/img/q-logic-4.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 1,
+  "sectionID": [
+    0
+  ],
+  "qAnswer": "/img/a-logic-4.png",
+  "difficulty": 0.7
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc7"
+  },
+  "qText": "/img/q-logic-5.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 2,
+  "sectionID": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "qAnswer": "/img/a-logic-5.png",
+  "difficulty": 0.7
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc8"
+  },
+  "qText": "/img/q-logic-6.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 0,
+  "sectionID": [
+    0,
+    1
+  ],
+  "qAnswer": "/img/a-logic-6.png",
+  "difficulty": 0.2
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bc9"
+  },
+  "qText": "/img/q-logic-7.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 0,
+  "sectionID": [
+    0,
+    1,
+    2
+  ],
+  "qAnswer": "/img/a-logic-7.png",
+  "difficulty": 0.5
+},{
+  "_id": {
+    "$oid": "602c3480581b021ce4584bca"
+  },
+  "qText": "/img/q-logic-8.png",
+  "courseID": "6021b8e93dc03b2c9c2ce6a7",
+  "lessonID": 2,
+  "sectionID": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "qAnswer": "/img/a-logic-8.png",
+  "difficulty": 0.5
+},{
+  "_id": {
+    "$oid": "6048aff3bd7c7b4df417705a"
+  },
   "qText": "/img/q-logic-9.png",
   "courseID": "6021b8e93dc03b2c9c2ce6a7",
   "lessonID": 1,

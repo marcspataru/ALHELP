@@ -1,0 +1,2293 @@
+[{
+  "_id": {
+    "$oid": "6021c17b63f61f20288453ab"
+  },
+  "name": "marc2",
+  "password": "$2b$10$cxJB67Oo.pBAatrBI0hEw.FS8yAZ/RNz.r4pmk5x1gTTDUCqD3ObK",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6021c17b63f61f20288453ac"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 1
+    },
+    {
+      "_id": {
+        "$oid": "6021c17b63f61f20288453ad"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.8,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Reflective 1",
+    "siIndicator": "Intuitive 3",
+    "vvIndicator": "Verbal 3",
+    "sgIndicator": "Global 5"
+  }
+},{
+  "_id": {
+    "$oid": "602b104cea430f19b4854aeb"
+  },
+  "name": "marc",
+  "password": "$2b$10$YWveMR2stu5jzqWowMPhmuFD0ayBz0WVbdQaHZ3xPIY5NzOV/eKru",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "602b104cea430f19b4854aec"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "602b104cea430f19b4854aed"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.81,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 9",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "602d198b293184238c87cb91"
+  },
+  "name": "test",
+  "password": "$2b$10$UzhgqOcK77ClAE59e2Id9OVcGoN1SYv/Hddpdjywqggqrp1PJqzvC",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "602d198b293184238c87cb92"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "602d198b293184238c87cb93"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.8500000000000001,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6034217f7124020cb44935a7"
+  },
+  "name": "marcgresit",
+  "password": "$2b$10$VdOwCfcutZ8GfGraAnlnVOAvj0rBmcRhMkyQrGEJ7uATCAXFSoVRS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6034217f7124020cb44935a8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "6034217f7124020cb44935a9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.85,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "603438cd4060fd279ce20fd8"
+  },
+  "name": "a",
+  "password": "$2b$10$FWMJd/dZp0xUTH0oGKpnNOkMfnveJ8HIPI3IxUPrXzJmaMuRp2lCe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "603438cd4060fd279ce20fd9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "603438cd4060fd279ce20fda"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 1.0999999999999999,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60343996c0c1f83fd81f90e7"
+  },
+  "name": "a2",
+  "password": "$2b$10$pWhI2S3PaAPcfjeKWlgT6OnW4P0G.CZKY0F8Xf5qyup6zxtDHTG4q",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "60343996c0c1f83fd81f90e8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "60343996c0c1f83fd81f90e9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.85,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60343cad9e008a0b0c026b63"
+  },
+  "name": "a5",
+  "password": "$2b$10$KJGGzuxMUm3VhaV0Esq9XerxyiTif43BibpjDx935jyIQw9xuZAiy",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "60343cad9e008a0b0c026b64"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "60343cad9e008a0b0c026b65"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 1.0499999999999998,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60343e597810083a5851197d"
+  },
+  "name": "a6",
+  "password": "$2b$10$0nTJFuFDqKOkEXMCsO2f.OrypstHgIWMf4qEm2GGgGijCUyPMX57C",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "60343e597810083a5851197e"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "60343e597810083a5851197f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.99,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 3",
+    "siIndicator": "Sensing 3",
+    "vvIndicator": "Visual 1",
+    "sgIndicator": "Sequential 3"
+  }
+},{
+  "_id": {
+    "$oid": "60363889b441d706e4cfc33b"
+  },
+  "name": "a7",
+  "password": "$2b$10$g2OU5mleOHxM9XhQwZmv1ObOgsPjJSYlc3bJeJt2GtrMP5wQmNFg2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "60363889b441d706e4cfc33c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 2
+    },
+    {
+      "_id": {
+        "$oid": "60363889b441d706e4cfc33d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60365b93485c0c4644c1e9b2"
+  },
+  "name": "a8",
+  "password": "$2b$10$m1H3tl5X6EO.OrMJ/RQZoOtdUoinFST5eZWuA4RZYdasNJqftIgUW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "60365b93485c0c4644c1e9b3"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "60365b93485c0c4644c1e9b4"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.7,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 7",
+    "siIndicator": "Sensing 9",
+    "vvIndicator": "Visual 9",
+    "sgIndicator": "Sequential 9"
+  }
+},{
+  "_id": {
+    "$oid": "603662cc08c04b212001ffb5"
+  },
+  "name": "a10",
+  "password": "$2b$10$oDCNVPKrkViEdW/soZBq7O8joEHu3WJMTLCB5ZygEJejoZfVUBNhy",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "603662cc08c04b212001ffb6"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "603662cc08c04b212001ffb7"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": -0.3000000000000001,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "603d79d9fd5bf20e4cd9bed1"
+  },
+  "name": "a9",
+  "password": "$2b$10$hNgiOgwQWI71dpyCzGwpT.hbRXFD/706uOhdLYLnC0TXOBUUyY1R2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "603d79d9fd5bf20e4cd9bed2"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "603d79d9fd5bf20e4cd9bed3"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 1.0999999999999999,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Reflective 1",
+    "siIndicator": "Sensing 1",
+    "vvIndicator": "Visual 1",
+    "sgIndicator": "Global 1"
+  }
+},{
+  "_id": {
+    "$oid": "603e7c0f2e6acd3620c14678"
+  },
+  "name": "testm",
+  "password": "$2b$10$/9qF6UtVuhPn.cQu98AqBON7KAiGUmQI7WKGOCxtn8Xhn5YEYRgmK",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "603e7c0f2e6acd3620c14679"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "603e7c0f2e6acd3620c1467a"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.8999999999999999,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 3",
+    "siIndicator": "Sensing 1",
+    "vvIndicator": "Visual 3",
+    "sgIndicator": "Global 1"
+  }
+},{
+  "_id": {
+    "$oid": "603e7db9b9dc281008f64a96"
+  },
+  "name": "Eric",
+  "password": "$2b$10$c/fogusEnrSTbb6Ps1jcJuVeHq8tLem/vI.a7B8h1YisOhB5Km6pe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "603e7db9b9dc281008f64a97"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "603e7db9b9dc281008f64a98"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 5",
+    "siIndicator": "Intuitive 3",
+    "vvIndicator": "Visual 1",
+    "sgIndicator": "Sequential 3"
+  }
+},{
+  "_id": {
+    "$oid": "6048b32b961c711934b0512e"
+  },
+  "name": "bugtest",
+  "password": "$2b$10$aUEGuQwlh9dWZpBcE1wqfubFIBPl2WL./HCSSuzgTZQ7y0ZauKZES",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6048b32b961c711934b0512f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "6048b32b961c711934b05130"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6048b515af553740501ee19a"
+  },
+  "name": "testDEMO",
+  "password": "$2b$10$9smMPch7RcJBbxfPn3hIA.zwufVblcvskMFS5jA/Q44vQTC2poBEq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6048b515af553740501ee19b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "6048b515af553740501ee19c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "604a24f690d6d416e430ea18"
+  },
+  "name": "acc1",
+  "password": "$2b$10$/2TLsFrKk41IiJvGaFhlHuI37/eAmZWqaqSz5ZM6.xl5hV/6S8XDC",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "604a24f690d6d416e430ea19"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "604a24f690d6d416e430ea1a"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "6069bf7933850612848bf475"
+  },
+  "name": "testname",
+  "password": "$2b$10$npBu7m3pg8JECFtrxlwf4Ou8qRidZgxk5kwsosDDDypVYylOeKd3a",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "6069bf7933850612848bf476"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "6069bf7933850612848bf477"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608da9a025d9821a5864ba82"
+  },
+  "name": "RVY5ek1EB5",
+  "password": "$2b$10$uG33jEgwTgYvUUIm0lmMgOb/PIGjBCcBCb8p7mAY/5Qx/hC2ynUfq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608da9a025d9821a5864ba83"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608da9a025d9821a5864ba84"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daa21d795b81584840dd6"
+  },
+  "name": "y8YqXnoKrM",
+  "password": "$2b$10$.gkrKwhNpnu7KsUrChz/rezwI6O/7EzcfMdfQTC4nkxY8I9HASa/i",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daa21d795b81584840dd7"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daa21d795b81584840dd8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daa4803886426903a7d90"
+  },
+  "name": "OlPpf1o4ae",
+  "password": "$2b$10$0saFiSXYnp/e4HrV2KNb3.YSfzuYdYj4uDCfDChiOQ0dm7x6zD8kW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daa4803886426903a7d91"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daa4803886426903a7d92"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daa935204b73c644d2a09"
+  },
+  "name": "UJFF9ez5Ec",
+  "password": "$2b$10$YVsGwz9Apv.y14di0Bpj3.gqWcO50QiliBZrUFQEuFXjJ6Ts2haRi",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daa935204b73c644d2a0a"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daa935204b73c644d2a0b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dad875204b73c644d2a0c"
+  },
+  "name": "9PTUT7nr59",
+  "password": "$2b$10$jMN3Iiwv8SIfVX28khFKG.jYcm7s9gs.ofYxcoSLYwNs1ZUmxzt1y",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dad875204b73c644d2a0d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dad875204b73c644d2a0e"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daee89e7d7328dc4f55a7"
+  },
+  "name": "XvJopupJdN",
+  "password": "$2b$10$JE.nOQGLhyoaGLkPOCSjrOBvnjcHLFqgAA0dr2euZcb5O1CLHHLPe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daee89e7d7328dc4f55a8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daee89e7d7328dc4f55a9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daf5e76a29028b4ab147f"
+  },
+  "name": "TTiYz5m6Lm",
+  "password": "$2b$10$BH3RAysCdOPigpphhpOXJ.SzkLF3jWrDQbLeLLWj1VpteOkSxsOne",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daf5e76a29028b4ab1480"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daf5e76a29028b4ab1481"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608daf6476a29028b4ab1482"
+  },
+  "name": "AqFasXd7oy",
+  "password": "$2b$10$dY9xigsRbROL9c9qTqtWKeevgqgZEdYmQ9dj.R2yi4ir7Vun8I5V.",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608daf6476a29028b4ab1483"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608daf6476a29028b4ab1484"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dafc296df5822f8b25b67"
+  },
+  "name": "GvqwvGSMeP",
+  "password": "$2b$10$VvyivsO7DUHAUSOv9QldqO7AdQkL.dmjcwLJ.JS4DnWyAVTY1U.ia",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dafc296df5822f8b25b68"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dafc296df5822f8b25b69"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db01cd929d13948bc301a"
+  },
+  "name": "EhijDrQv8j",
+  "password": "$2b$10$YdE91L66DsuiGekkYWlveOSe.j/GPTO26ETcBHh5obA55CFNJKbcS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db01cd929d13948bc301b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db01cd929d13948bc301c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db0739f2bca52e466d0fa"
+  },
+  "name": "uBlvPp0YCB",
+  "password": "$2b$10$WJNtKc3TIs7k/32ztw8dseZ.qu.eGhIb6qoT/h1TjKqrQNmnObqT6",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db0739f2bca52e466d0fb"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db0739f2bca52e466d0fc"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db09574b9c84cf8a0ee3e"
+  },
+  "name": "u3OBKE9csk",
+  "password": "$2b$10$t7R4JXZTgYlHDFWryoEtAeHXQpdmzuXARPef2HnMvzpsA8RLWuEVO",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db09574b9c84cf8a0ee3f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db09574b9c84cf8a0ee40"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db13dac7e91224468e151"
+  },
+  "name": "9Alcy0xAUZ",
+  "password": "$2b$10$6joQSx3UNsWAFIcgPGNRze7.I11EtYdsiSZvy8dt0lkDIygqzypTi",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db13dac7e91224468e152"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db13dac7e91224468e153"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db180a78d7639b49aedee"
+  },
+  "name": "CZnDAlMGl1",
+  "password": "$2b$10$.00lFkC5SSbincaJWSa7ROFu0wLbgdPQHaHyZrihwJWJIqtqHfNt6",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db180a78d7639b49aedef"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db180a78d7639b49aedf0"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db211cd565c0cc0c2bcab"
+  },
+  "name": "z4Pd1eqPGG",
+  "password": "$2b$10$mRm.wpM.UTvvE9rPnA8.OOaEHR46IWT1IVuGGPwwl6SQM94wqrgPW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db211cd565c0cc0c2bcac"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db211cd565c0cc0c2bcad"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db22c032831317844bc16"
+  },
+  "name": "pu07al7m25",
+  "password": "$2b$10$yBDXnJv9xrSYtwE9l489VOR4j9VzKe1Hf02bM3nDEGwPk1E4noevC",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db22c032831317844bc17"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db22c032831317844bc18"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db33389a7fb2c60006ae8"
+  },
+  "name": "BdokHUm6Cn",
+  "password": "$2b$10$5zS.oU1DolCbYKJfWTri.e2fO8N9y61n2OepDRZj2h9OaWBj7AYVG",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db33389a7fb2c60006ae9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db33389a7fb2c60006aea"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db42689a7fb2c60006aeb"
+  },
+  "name": "testplease",
+  "password": "$2b$10$lhzne/m5xTJ5kTeykk1ndOs61JlBTsDzrygf5bssLl74gDUu51u3C",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db42689a7fb2c60006aec"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db42689a7fb2c60006aed"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db4b169478242803890a6"
+  },
+  "name": "071OI7RyNW",
+  "password": "$2b$10$YOy6e6ZCFTWeg4g8y7EgfO/e6BsjQ8xjU.PeVCobBRnMIwshQh0/W",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db4b169478242803890a7"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db4b169478242803890a8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db53769478242803890a9"
+  },
+  "name": "33dzOuzXX4",
+  "password": "$2b$10$rVuxJJLJA12UDSwa1HXcMOVDwcKtLZm7ao7VmJGs.EbKRoz53q8IC",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db53769478242803890aa"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db53769478242803890ab"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db55269478242803890ac"
+  },
+  "name": "4vEY7sKfa9",
+  "password": "$2b$10$lVneB2yh2r59qltZZKGB9OB9iTbRc/itZCOV.93lOCzJx7Pec4Xqm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db55269478242803890ad"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db55269478242803890ae"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db73d69478242803890af"
+  },
+  "name": "iLk0qGi1Iv",
+  "password": "$2b$10$rTpU./r26QQOPwfy1vB/neDKRIofhJ6RBaL.j4HtaimOKGKcQFPlK",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db73d69478242803890b0"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db73d69478242803890b1"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db7b1e1a01b53348c956e"
+  },
+  "name": "pECrbmIwpK",
+  "password": "$2b$10$SSu/cgEs1X/w2k269ZQb7enmdmkrTuiHuZdwF7YwRhHNPdXj1sB1S",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db7b1e1a01b53348c956f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db7b1e1a01b53348c9570"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db7c7ec0db8235c9b2874"
+  },
+  "name": "44UThl5CXd",
+  "password": "$2b$10$pbD00L0udmFAbkCDg11AluQghPb38NWP9VtlMDb8et5Z6zHUaI80K",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db7c7ec0db8235c9b2875"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db7c7ec0db8235c9b2876"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db7fb2ab9073b483bce77"
+  },
+  "name": "wCXkug8sQB",
+  "password": "$2b$10$Xx8arUJyeAHQzVjcK5uYQ.WnGCAf9OnBcWsrVRXoTyFb5CcPtoXqG",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db7fb2ab9073b483bce78"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db7fb2ab9073b483bce79"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db82c577f584da8aa0f27"
+  },
+  "name": "z6HRPFA0o3",
+  "password": "$2b$10$GEve4iCiTLdXfms/./7Dne3PtRv4uMC8WIoFEAhhaPwQyFcydGzJa",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db82c577f584da8aa0f28"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db82c577f584da8aa0f29"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db83a577f584da8aa0f2a"
+  },
+  "name": "VeZuwOgL6E",
+  "password": "$2b$10$Pr7pj1.aR2lUCLxG5DJzKu1kYhfu5OkJDCjzhhwcwTac7cDM5aDAy",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db83a577f584da8aa0f2b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db83a577f584da8aa0f2c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db91a7334c118e0095f50"
+  },
+  "name": "S9ucuJBtT4",
+  "password": "$2b$10$XGWaZxXgcG/kRKc.2kdbBOl3D2OFZI20cSO1CCf6DpX8PPIvDDyPW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db91a7334c118e0095f51"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db91a7334c118e0095f52"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608db92e7334c118e0095f53"
+  },
+  "name": "2RM1uAhvQO",
+  "password": "$2b$10$t126lIQ.6wsgr6xlHJiZ/.S7OoZjKXF5iyAotpNAGWWFJqgAlhKM.",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db92e7334c118e0095f54"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db92e7334c118e0095f55"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db95eb936ad0b9806b379"
+  },
+  "name": "vCFpRjon2S",
+  "password": "$2b$10$HuQnYqiZuEVbKVVPQv4U9.9m217ycJlJJah9R7oMlU5.1EdS0ERS.",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db95eb936ad0b9806b37a"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db95eb936ad0b9806b37b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608db96cb936ad0b9806b37c"
+  },
+  "name": "uvEM15zs5b",
+  "password": "$2b$10$grybfTwjYAdtwvvFtKiD6eKix22BQkFFZaZ5p/DGMqTe12jMprn3e",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608db96cb936ad0b9806b37d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608db96cb936ad0b9806b37e"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dba12520d3c31f098b81b"
+  },
+  "name": "8zU4qvd7QD",
+  "password": "$2b$10$iTHHJjZg6M5XC/gc8VrIpO24Bff60PHq5B.F1zZd2VThrg4UD5uw2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dba12520d3c31f098b81c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dba12520d3c31f098b81d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dbabdcda8863b30819fe3"
+  },
+  "name": "8XfGJs2q8j",
+  "password": "$2b$10$Vp11HAm6Jlqyvsl0yDrfFutiGal/nBW8RMGChHtyZuOLbcbYYt0Gy",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dbabdcda8863b30819fe4"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dbabdcda8863b30819fe5"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dbb20e524712be8804e9b"
+  },
+  "name": "GIPIwoiSJN",
+  "password": "$2b$10$hhaCF9jVdyEWkv2PZ5FZkOvpDAwJOcgW2QJmFSmwCLhnCvfZs3uZe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dbb20e524712be8804e9c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dbb20e524712be8804e9d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dbb46c173ea2c54b53e4b"
+  },
+  "name": "5SWGXQX0m2",
+  "password": "$2b$10$qLrnwLYO3MAFckdzLINNRuHDB/l7ROETuZOpNt3Bh/QYPR.6Z9zeS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dbb46c173ea2c54b53e4c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dbb46c173ea2c54b53e4d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dce204be9194df483d1fc"
+  },
+  "name": "9uIb96MyN6",
+  "password": "$2b$10$.GYUTCVjSuIz0dhpOtDuGugCaXSFYNmNhPLXmILdiCqPvLM2rIkla",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dce204be9194df483d1fd"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dce204be9194df483d1fe"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dce334be9194df483d1ff"
+  },
+  "name": "JBSIxyky80",
+  "password": "$2b$10$koEIN/lnqyB.v8Tlx9JYpegm7q6e1fWnXF/l.ZmSy36uzuHdU/eoO",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dce334be9194df483d200"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dce334be9194df483d201"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dce4a66a5230f94835ec0"
+  },
+  "name": "kWNDh3EPT2",
+  "password": "$2b$10$OJJagK6oMmPwGDoipR4BEOq2kCHwpU2hnkonxqDL524cD8gmZHV0O",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dce4a66a5230f94835ec1"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dce4a66a5230f94835ec2"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dce6766a5230f94835ec3"
+  },
+  "name": "tPBEYCp43X",
+  "password": "$2b$10$3X3f3BKpZC8bIF.5Hq7/j.1s6o9XR0F9UTkSvgiez5uPjHsTnYPLe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dce6766a5230f94835ec4"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dce6766a5230f94835ec5"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dce80ee95e00528aa3c76"
+  },
+  "name": "v7BdZjQ56D",
+  "password": "$2b$10$ruz62hg3ZhWRg8qA6tqyfOu/qL8A0GrKXDQY2.cCaOjHlX2B9empS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dce80ee95e00528aa3c77"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dce80ee95e00528aa3c78"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd68b4961390fc86120b4"
+  },
+  "name": "8ZwsOgueCV",
+  "password": "$2b$10$hprTdQywCzpgdlK1l96SiuIE3yeRghv7j7QxTHVIAWzO4ybz9z2J2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd68b4961390fc86120b5"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd68b4961390fc86120b6"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dd7644961390fc86120b7"
+  },
+  "name": "1ZC6dke4RF",
+  "password": "$2b$10$W/OwaifhplcyKcS50v/De.ED6p96XtCIglAjzv3uHcvAIzUEoR3Qu",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd7644961390fc86120b8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd7644961390fc86120b9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dd784690f24263ce91b96"
+  },
+  "name": "Ip20cMHLsm",
+  "password": "$2b$10$jViZs9PKS3A3aM1jYM90fuRBdI1BUd5ERj7PMc9jGKwyv22AMPqIO",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd784690f24263ce91b97"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd784690f24263ce91b98"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608dd7b4ab518434705d3c0f"
+  },
+  "name": "Tt1R5gY589",
+  "password": "$2b$10$HNxeeRBPob.K6x3L65BCHeeh9T4BV7lfvwysg7lzIa2q44FmRUAay",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd7b4ab518434705d3c10"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd7b4ab518434705d3c11"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd845a991f248bc9d9529"
+  },
+  "name": "1JLg1cMBAX",
+  "password": "$2b$10$iLr.eSDgntWBIxyDRItM1e0JhY4E1u6J/ql0u.DYFiwI0S0CEmiaW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd845a991f248bc9d952a"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd845a991f248bc9d952b"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd85edf022053c474d341"
+  },
+  "name": "CxduDHPKNM",
+  "password": "$2b$10$Pw71vkVCSz6kDq/navZyZ.wfEHJ3GUcduc0a3MnfwKI/ki9o/lLQS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd85edf022053c474d342"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd85edf022053c474d343"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd8775fceae4c049e77e1"
+  },
+  "name": "C23UD6Ven6",
+  "password": "$2b$10$ol3nu9uQEP8ZJaki8Zpe8uk8nLqt71GbwKjhsia02nmGSviiDLyKm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd8775fceae4c049e77e2"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd8775fceae4c049e77e3"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd8cdf16aa926ace7ebf2"
+  },
+  "name": "I7ZqSNeejn",
+  "password": "$2b$10$Pfm//FYUnWhwopEm/18ckONLwVf5tYTBuz/8OEhCzrHw.s03cDveq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd8cdf16aa926ace7ebf3"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd8cdf16aa926ace7ebf4"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd9a832febe4ab041dc92"
+  },
+  "name": "k9KjOlQlxa",
+  "password": "$2b$10$fWcC/JhuKMHhEFCZ8O4CmeYWFTpZD0qISx5X8NQ.PfmMMTX8jEQmW",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd9a832febe4ab041dc93"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd9a832febe4ab041dc94"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dd9c602656353e46a7e15"
+  },
+  "name": "sRsMFAL0Gu",
+  "password": "$2b$10$XyBqu/NOaFWlDqivC72MgO9OumNr2H25JBq5hvcaYxorKQY..owlq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dd9c602656353e46a7e16"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dd9c602656353e46a7e17"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dda051636d2147409b55b"
+  },
+  "name": "HULvbuVeOk",
+  "password": "$2b$10$DL0R7ldAi/DYQcrTYgVm9.0UWZ91dkmgzbCSMciH8H7.pu3tmpavm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dda051636d2147409b55c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dda051636d2147409b55d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddbc8c0da8c2b589cdb0e"
+  },
+  "name": "CwVYBxGfmP",
+  "password": "$2b$10$pCLRcCBp4JB5tn5MbgS96u13xM3avmtAaoCUpfoKfozHffEBOZy9K",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddbc8c0da8c2b589cdb0f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddbc8c0da8c2b589cdb10"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddc6eb9b4e821cc6ce481"
+  },
+  "name": "xX936W5j7a",
+  "password": "$2b$10$Ym478rYIIvdViJCG2XDlDuddGigHwav.RvOaQAMv9Ekgs3t7tFkrq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddc6eb9b4e821cc6ce482"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddc6eb9b4e821cc6ce483"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddc8d6428e325a0d7c151"
+  },
+  "name": "0nGIuoMPff",
+  "password": "$2b$10$cJ3c.AHGofDaUBe3OEKWCuKmgVwjZP5xcdg.7FGoTjy9hPNyYinPq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddc8d6428e325a0d7c152"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddc8d6428e325a0d7c153"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddcd1c9a7cd1710d684ea"
+  },
+  "name": "BlcAqNNfl5",
+  "password": "$2b$10$ho0x17rpZoPcRUPI/4yeA.kMSOXRB290.sMMbpiUH5Kdpkhfz93Om",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddcd1c9a7cd1710d684eb"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddcd1c9a7cd1710d684ec"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddd056e563f24f0d27e6d"
+  },
+  "name": "h35yXWiRuY",
+  "password": "$2b$10$XTuq806eMFL/gsA/gPxjMexmNvghPZVx1A2MYDbSRtJh67oonyVvm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddd056e563f24f0d27e6e"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddd056e563f24f0d27e6f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddd2a475b00197c2b055e"
+  },
+  "name": "SeBORjekDu",
+  "password": "$2b$10$AtyEyH9UetGsQERtnfzRX.qAA685sxDh2RQckCQ0viP12kQA/bTbm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddd2a475b00197c2b055f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddd2a475b00197c2b0560"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddd6c474e450bb830a00e"
+  },
+  "name": "R1yEYy5yc1",
+  "password": "$2b$10$hpHjCj1FdhZTEc93zsqVYeXimjOTB398hAx3qhBPgqypmX4EzTB/K",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddd6c474e450bb830a00f"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddd6c474e450bb830a010"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddd9f0734c332ccb6971c"
+  },
+  "name": "2ItiZalGpX",
+  "password": "$2b$10$BReg2rARbrLpBYVFRSiqE.mdQVAOY0gATTkvmHDkJVX3v5HnVYANm",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddd9f0734c332ccb6971d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608ddd9f0734c332ccb6971e"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dddc6c9da66429cef22ca"
+  },
+  "name": "EfgpbA2teF",
+  "password": "$2b$10$NuPGY/pWn52jMtvOu7POo.rl0FI47osPDLviPGOFZRA2.AOjEhbZ2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dddc6c9da66429cef22cb"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 0
+    },
+    {
+      "_id": {
+        "$oid": "608dddc6c9da66429cef22cc"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.5,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddde40f5da01eccf81655"
+  },
+  "name": "iqVLD4qrQv",
+  "password": "$2b$10$bzWuyh33SBcqy4JIpogSz.FMaI5Ii5l6m0Mg0aELPCkBnOc6Pb7CG",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddde40f5da01eccf81656"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 1
+    },
+    {
+      "_id": {
+        "$oid": "608ddde40f5da01eccf81657"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.7,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dde54b5364e3dd46e0df7"
+  },
+  "name": "SzUs3AjXx8",
+  "password": "$2b$10$sF4Kk0gN3J0ZI.8MSasAZe4n2gFLF5Xk.sh9RKeeluByJyq/kSrKS",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dde54b5364e3dd46e0df8"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 1
+    },
+    {
+      "_id": {
+        "$oid": "608dde54b5364e3dd46e0df9"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.7,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608dde7ecb3dd53d5cc29cff"
+  },
+  "name": "qgkcWlqJGu",
+  "password": "$2b$10$WLVIk0Xaq.Es8QcAHFn9VOMFwUXy1lVChvDMU3kkCTjbkuoTPP2a2",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608dde7ecb3dd53d5cc29d00"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 2
+    },
+    {
+      "_id": {
+        "$oid": "608dde7ecb3dd53d5cc29d01"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.85,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddebcb299863cecc10ede"
+  },
+  "name": "f6GtH1awCk",
+  "password": "$2b$10$UW.ke5uJDN.uPfhHKzFiKOibI6rA4v8M78M7b35sX3Vs9.h1HQKQq",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddebcb299863cecc10edf"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 2
+    },
+    {
+      "_id": {
+        "$oid": "608ddebcb299863cecc10ee0"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.85,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddf71a08fc72300439024"
+  },
+  "name": "fOVVFqjIK9",
+  "password": "$2b$10$y8LMVPN1BcGBIJ/FTmZKsOK1.UE2QIR8OWqcrjrQVNakzGL5khoGe",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddf71a08fc72300439025"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "608ddf71a08fc72300439026"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 1,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+},{
+  "_id": {
+    "$oid": "608ddf9f603db63d545bfc4b"
+  },
+  "name": "Zs9o9NqmKq",
+  "password": "$2b$10$BVb/lvUOcnbZWmWzucFdGuRdIRG0Y5NSQr5nxrVFpwZzMojPMM9ci",
+  "courses": [
+    {
+      "_id": {
+        "$oid": "608ddf9f603db63d545bfc4c"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a7",
+      "completion": 3
+    },
+    {
+      "_id": {
+        "$oid": "608ddf9f603db63d545bfc4d"
+      },
+      "id": "6021b8e93dc03b2c9c2ce6a8",
+      "completion": 0
+    }
+  ],
+  "performance": 0.99,
+  "__v": 0,
+  "indicators": {
+    "arIndicator": "Active 11",
+    "siIndicator": "Sensing 11",
+    "vvIndicator": "Visual 11",
+    "sgIndicator": "Sequential 11"
+  }
+}]

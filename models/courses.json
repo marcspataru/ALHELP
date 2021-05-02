@@ -55,7 +55,7 @@
       "lessonName": "Truth Tables and Laws",
       "lessonShort": "ttal",
       "numberOfSections": "4",
-	  "alternativeSections": [
+      "alternativeSections": [
         {
           "path": "/img/alt01.png",
           "indicators": {
@@ -102,7 +102,7 @@
       "lessonName": "Predicates",
       "lessonShort": "predicates",
       "numberOfSections": "5",
-	  "alternativeSections": [
+      "alternativeSections": [
         {
           "path": "/img/alt01.png",
           "indicators": {
@@ -143,7 +143,7 @@
           },
           "section": 3
         },
-		{
+        {
           "path": "/img/alt01.png",
           "indicators": {
             "arIndicator": "Active 5",
@@ -160,5 +160,5 @@
   "_id": {
     "$oid": "6021b8e93dc03b2c9c2ce6a8"
   },
-  "name": "Computer Organization and Architecture"
+  "name": "Computer Organization and Architecture (Work In Progress)"
 }]
