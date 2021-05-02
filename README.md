@@ -10,7 +10,6 @@ To run or test the project, you must clone the repository and have Node JS insta
 * Hover over the "alhens" database on the left and click on the "+" to create another collection
 * Name it "questions" and choose the corresponding JSON file from the ./models
 * Repeat for "courses" and *courses.json*
-* Clone the repository
 * In the directory's root, run *npm install*
 * To start the application, run *npm run watch*
 * In a modern browser (Chrome is recommended), navigate to localhost:3000
