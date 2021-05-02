@@ -1,7 +1,7 @@
-module.exports = {
-	MAX_AGE: 60 * 60 * 24,
+module.exports = { // constants
+	MAX_AGE: 60 * 60 * 24, // one day
 	SALT_ROUNDS: 10,
-	DEFAULT_PERFORMANCE: 0.5,
+	DEFAULT_PERFORMANCE: 0.5, // default user performance
 	JWT_COOKIE_NAME: 'jwt',
 	LOGIN_PAGE_NAME: 'login',
 	LOGIN_PAGE_TITLE: 'Login',

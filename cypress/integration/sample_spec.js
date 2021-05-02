@@ -9,6 +9,7 @@ function makeid(length) {
   return result.join('');
 }
 
+// These tests were described in their corresponding section in the report
 describe('Login Page Route', () => {
   it('Checks if login page loads and allows typing', () => {
     cy.visit('localhost:3000')
@@ -42,9 +43,9 @@ describe('Register Page Route', () => {
   })
 })
 
-let randomUsername = makeid(10);
+let randomUsername = makeid(10); // make a random username of length 10
 
-Cypress.Cookies.preserveOnce('jwt')
+Cypress.Cookies.preserveOnce('jwt') // preserve the JWT cookie for the next test (Cypress clears the browser state in-between tests)
 
 describe('Account creation', () => {
   it('Registers a new account, redirects logged in user to Learning Preferences and checks if user is logged in', () => {

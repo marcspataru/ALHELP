@@ -4,6 +4,7 @@
   "description": "",
   "main": "routes/index.js",
   "scripts": {
+    "start": "node ./start.js",
     "watch": "nodemon ./start.js",
     "cypress:open": "cypress open"
   },

@@ -1,19 +1,21 @@
-const constants = require('../constants_utils.js');
-const User = require('../models/User');
-const Course = require('../models/Course');
+const constants = require('../constants_utils.js'); // utility file for constants
+const User = require('../models/User'); // required for the Users collection
+const Course = require('../models/Course'); // required for the Courses collection
 
+// GET request for learning preferences page
 module.exports.learning_preferences_get = async (req, res) => {
-	const user = req.session.user;
-	if(user.indicators.arIndicator) {
+	const user = req.session.user; // needed to check if the user has already completed the ILS
+	if(user.indicators.arIndicator) { // if they did, show them their results
 		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE, ilsResults: { arIndicator: user.indicators.arIndicator, siIndicator: user.indicators.siIndicator, vvIndicator: user.indicators.vvIndicator, sgIndicator: user.indicators.sgIndicator } });
-	} else {
+	} else { // else, render the normal page 
 		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE });
 	}
 }
 
+// POST request - submission of quiz answers
 module.exports.learning_preferences_post = async (req, res) => {
 	try {
-		const user = req.session.user;
+		const user = req.session.user; // needed for the user ID
 		let arIndex = 1;
 		let ar1 = 0, ar2 = 0;
 		let siIndex = 2;
@@ -23,9 +25,9 @@ module.exports.learning_preferences_post = async (req, res) => {
 		let sgIndex = 4;
 		let sg1 = 0, sg2 = 0;
 		let qNo = 0;
-		while (qNo < 11) {
-			if(req.body['q' + arIndex] == 'option' + arIndex + 'a') {
-				ar1++;
+		while (qNo < 11) { // iterate from 0 to 10 (inclusive), and analyse four question answers at a time
+			if(req.body['q' + arIndex] == 'option' + arIndex + 'a') { // option1a is the value of a JSON field from the request body
+				ar1++; // increment the active indicator (similarly to the scoring sheet from the report)
 			} else if(req.body['q' + arIndex] == 'option' + arIndex + 'b') {
 				ar2++;
 			}
@@ -52,10 +54,10 @@ module.exports.learning_preferences_post = async (req, res) => {
 		}
 
 		let arIndicator, siIndicator, vvIndicator, sgIndicator;
-		if(ar1 > ar2) {
-			arIndicator = 'Active ' + (ar1 - ar2);
+		if(ar1 > ar2) { // according to the scoring sheet, whichever variant of the indicator is greater, that is the chosen variant
+			arIndicator = 'Active ' + (ar1 - ar2); // if the first indicator is greater, it means that this dimension is Active
 		} else if(ar1 < ar2) {
-			arIndicator = 'Reflective ' + (ar2 - ar1);
+			arIndicator = 'Reflective ' + (ar2 - ar1); // else, the dimension is Reflective
 		} else {
 			throw Error('There was something wrong while calculating the Active/Reflective indicator.');
 		}
@@ -87,8 +89,7 @@ module.exports.learning_preferences_post = async (req, res) => {
 			vvIndicator: vvIndicator,
 			sgIndicator: sgIndicator
 		}};
-		let doc = await User.findOneAndUpdate(filter, update);
-		//console.log('found user with name: ', doc.name);/
+		let doc = await User.findOneAndUpdate(filter, update); // the Users collection is updated accordingly
 		res.render(constants.LEARNING_PREFERENCES_PAGE_NAME, { title: constants.LEARNING_PREFERENCES_PAGE_TITLE, data: req.body, ilsResults: { arIndicator, siIndicator, vvIndicator, sgIndicator } });
 	}
 	catch(err) {
@@ -96,26 +97,27 @@ module.exports.learning_preferences_post = async (req, res) => {
 	}
 }
 
+// GET request method for the Courses page
 module.exports.courses_get = async (req, res) => {
 	try {
-		const error = req.session.error ? req.session.error : null;
-		const user = req.session.user;
+		const error = req.session.error ? req.session.error : null; // display an error on the top of the page if other pages updated the session cookie with an error
+		const user = req.session.user; // get the user from the session cookie
 		if(!user.indicators.arIndicator) {
-			res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, error: error });
+			res.render(constants.COURSES_PAGE_NAME, { title: constants.COURSES_PAGE_TITLE, error: error }); // if the user did not complete the ILS, display an error
 		} else {
-			let coursesList = [];
-			for(let i = 0; i < user.courses.length; i++) {
+			let coursesList = []; // will contain the courses as objects
+			for(let i = 0; i < user.courses.length; i++) { // search for each course
 				const filter = { _id: user.courses[i].id };
 				const doc = await Course.findOne(filter);
 				let obj;
-				if(doc.lessons.length <= user.courses[i].completion) {
+				if(doc.lessons.length <= user.courses[i].completion) { // if the course is completed, mark it as such and pass it to the front-end
 					obj = {
 						name: doc.name,
 						numberOfLessons: doc.lessons.length,
 						completion: user.courses[i].completion,
 						completed: true
 					};
-				} else {
+				} else { // else, mark it as incomplete
 					obj = {
 						name: doc.name,
 						numberOfLessons: doc.lessons.length,
