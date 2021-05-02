@@ -11,5 +11,5 @@ To run or test the project, you must clone the repository and have Node JS insta
 * Name it "questions" and choose the corresponding JSON file from the ./models
 * Repeat for "courses" and *courses.json*
 * In the directory's root, run *npm install*
-* To start the application, run *npm run watch*
+* To start the application, run *npm start*
 * In a modern browser (Chrome is recommended), navigate to localhost:3000
